@@ -48,7 +48,7 @@ class TestLive(unittest.TestCase):
         p = ruler("demo/ragged-dots.html", "--viewport", "1280x900")
         self.assertIn("left edges 96,152,112,176,104", p.stdout)
         p = ruler("demo/baseline-off.html", "--viewport", "375x812")
-        self.assertIn("row 3 span.name 0, span.status 0, span.amount +4px", p.stdout)
+        self.assertIn("spread 4.00px; row 3 span.amount +4px from span.name", p.stdout)
 
     def test_a_page_whose_stylesheet_is_missing_is_an_error_not_a_measurement(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

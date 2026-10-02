@@ -355,14 +355,14 @@ def judge_set(st: Dict[str, Any], scale: Scale) -> Tuple[List[Row], List[Allow],
             if spread(bl) > TOL:
                 bad_rows.append((i, g))
     if bad_rows:
-        # Offsets from the row's first cell, not absolute y values: the
-        # difference is what is wrong, and it does not move with the font.
-        def offset(c: Dict[str, Any], first: Dict[str, Any]) -> str:
-            d = round(c["baseline"] - first["baseline"], 2)
-            return "0" if d == 0 else f"{'+' if d > 0 else ''}{fmt(d)}px"
-        detail = "; ".join(f"row {i} " + ", ".join(f"{c['sig']} {offset(c, g[0])}" for c in g) for i, g in bad_rows[:6])
+        # Offsets from the row's leftmost text cell, not absolute y values:
+        # the difference is the defect, and it does not move with the font.
+        def offsets(g: List[Dict[str, Any]]) -> str:
+            off = [(c["sig"], round(c["baseline"] - g[0]["baseline"], 2)) for c in g[1:]]
+            return ", ".join(f"{sig} {'+' if d > 0 else ''}{fmt(d)}px" for sig, d in off if d) + f" from {g[0]['sig']}"
+        detail = "; ".join(f"row {i} {offsets(g)}" for i, g in bad_rows[:6])
         more = f"; +{len(bad_rows) - 6} more rows" if len(bad_rows) > 6 else ""
-        row("baselines", f"{detail}{more}; baseline offsets from each row's first text cell", "FAIL")
+        row("baselines", f"spread {worst:.2f}px; {detail}{more}", "FAIL")
     elif checked:
         row("baselines", f"level in {checked} text group(s), max spread {worst:.2f}px", "PASS")
     elif multi:
