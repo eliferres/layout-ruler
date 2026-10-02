@@ -1,0 +1,32 @@
+[
+  {
+    "cmd": "python3 -m layout_ruler demo/aligned.html",
+    "out": "PASS  0 findings, 2 sets judged across 2 viewports",
+    "status": 0
+  },
+  {
+    "cmd": "python3 -m layout_ruler demo/ragged-dots.html",
+    "out": "FAIL 1280x900 columns  col 2 span.dot: left spread 80.00px, right spread 80.00px, centre spread 80.00px; left edges 96,152,112,176,104; rows 1, 2, 3, 4, 5 share no value  [body > ul.list]\nFAIL 375x812 columns  col 2 span.dot: left spread 80.00px, right spread 80.00px, centre spread 80.00px; left edges 96,152,112,176,104; rows 1, 2, 3, 4, 5 share no value  [body > ul.list]\nFAIL  2 findings, 2 sets judged across 2 viewports",
+    "status": 1
+  },
+  {
+    "cmd": "python3 -m layout_ruler demo/uneven-gaps.html",
+    "out": "FAIL 1280x900 gaps  gaps 8,8,14,8px; the gap after row 3 off 8px  [body > ul.list]\nFAIL 1280x900 gap-scale  gaps 8,8,14,8px; off the scale after row 3 (14px)  [body > ul.list]\nFAIL 375x812 gaps  gaps 8,8,14,8px; the gap after row 3 off 8px  [body > ul.list]\nFAIL 375x812 gap-scale  gaps 8,8,14,8px; off the scale after row 3 (14px)  [body > ul.list]\nFAIL  4 findings, 2 sets judged across 2 viewports",
+    "status": 1
+  },
+  {
+    "cmd": "python3 -m layout_ruler demo/unequal-heights.html",
+    "out": "FAIL 1280x900 equal-size  heights 48,48,56,48,48px; row 3 off 48px  [body > ul.list]\nFAIL 375x812 equal-size  heights 48,48,56,48,48px; row 3 off 48px  [body > ul.list]\nFAIL  2 findings, 2 sets judged across 2 viewports",
+    "status": 1
+  },
+  {
+    "cmd": "python3 -m layout_ruler demo/baseline-off.html",
+    "out": "FAIL 1280x900 baselines  spread 4.00px; row 3 span.amount +4px from span.name  [body > ul.list]\nFAIL 375x812 baselines  spread 4.00px; row 3 span.amount +4px from span.name  [body > ul.list]\nFAIL  2 findings, 2 sets judged across 2 viewports",
+    "status": 1
+  },
+  {
+    "cmd": "python3 -m layout_ruler demo/overflow.html",
+    "out": "FAIL 375x812 viewport  scrollWidth 424 vs 375; 1 box(es) outside: body > div.banner x 24..424  [page]\nFAIL  1 finding, 2 sets judged across 2 viewports",
+    "status": 1
+  }
+]
