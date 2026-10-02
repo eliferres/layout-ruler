@@ -7,20 +7,21 @@ recorded probes with no browser.
 A probe lists every repeated set on the page: a parent with three or more
 visible element children of one tag. Each child is a row, and a row's cells
 are matched across rows by position and tag. The rules, with the Galen
-Framework phrase each one borrows:
+Framework spec each one borrows its meaning from:
 
-  columns      (aligned vertically all)  every cell column shares a left or a
-               right edge (a top or bottom edge for a side-by-side set), or
-               its centre line when the set's CSS centres its members; a
-               cell's leading mark (a status dot, an icon) is a sub-column
-  gaps         (below X px)              the gaps between neighbouring rows
+  columns      (aligned vertically left / right, centered)  every cell column
+               shares a left or a right edge (a top or bottom edge for a
+               side-by-side set), or its centre line when the set's CSS
+               centres its members; a cell's leading mark (a status dot, an
+               icon) is a sub-column
+  gaps         (below / above, in px)    the gaps between neighbouring rows
                are equal
   gap-scale                              each gap sits on the spacing scale
   equal-size   (width / height)          rows are the same height (stacked)
                or width (side by side)
   baselines                              text cells on one line share their
                first line's baseline
-  viewport     (inside screen)           nothing is wider than the viewport
+  viewport     (inside)                  nothing is wider than the viewport
   screen-height                          with --screen, no page scroll
 
 Every rule allows TOL px. A FAIL row carries the measured numbers.
