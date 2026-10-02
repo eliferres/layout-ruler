@@ -135,6 +135,8 @@ def judge(probes: List[Dict[str, Any]], scale: Scale, screen: bool,
             rows, allows, sets, skipped = judge_viewport(d, scale, screen)
         except (KeyError, TypeError) as e:
             raise UsageError(f"probe is missing a field the judge reads: {e}") from None
+        except IndexError:
+            raise UsageError("probe is malformed: a set with no rows or a row with no cells") from None
         laid = f"{d['viewport']['w']}x{d['viewport']['h']}"
         name = f"{asked[n][0]}x{asked[n][1]}" if asked else laid
         notes = []

@@ -118,6 +118,18 @@ class TestErrors(unittest.TestCase):
         finally:
             os.unlink(f.name)
 
+    def test_a_probe_with_an_empty_set(self) -> None:
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+            json.dump({"viewport": {"w": 1280, "h": 900}, "scrollWidth": 1280, "scrollHeight": 900,
+                       "sets": [{"path": "ul", "rows": []}], "overflow": []}, f)
+        try:
+            p = ruler("--probe-json", f.name)
+            self.assertEqual(p.returncode, 2)
+            self.assertNotIn("Traceback", p.stderr)
+            self.assertTrue(p.stderr.startswith("layout-ruler: probe is malformed: "))
+        finally:
+            os.unlink(f.name)
+
     def test_a_chrome_path_that_does_not_exist(self) -> None:
         self.assert_error(ruler(f"{FIX}/aligned-list.html", "--chrome", "/nonexistent/chrome"),
                           "layout-ruler: Chrome not found at /nonexistent/chrome")
