@@ -1,0 +1,35 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      # Both runner images ship Google Chrome, so the live and demo replay
+      # tests run here instead of skipping.
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Measure the demo pages
+        run: |
+          python -m layout_ruler demo/aligned.html
+          for page in ragged-dots uneven-gaps unequal-heights baseline-off overflow; do
+            python -m layout_ruler "demo/$page.html" && code=0 || code=$?
+            [ "$code" = 1 ] || { echo "demo/$page.html exited $code, expected 1"; exit 1; }
+          done
+      - name: Install and run the console script
+        run: |
+          python -m pip install .
+          layout-ruler --version
+          layout-ruler demo/aligned.html
