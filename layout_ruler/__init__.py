@@ -7,3 +7,7 @@ spacing scale, equal siblings, level baselines and horizontal overflow.
 from __future__ import annotations
 
 __version__ = "0.1.0"
+
+from .cli import main  # noqa: E402  (the version must exist before cli imports it)
+
+__all__ = ["__version__", "main"]
