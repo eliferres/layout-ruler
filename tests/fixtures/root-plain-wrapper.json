@@ -1,0 +1,131 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.page",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "section",
+     "sig": "section",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 1216,
+      "h": 90
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 65,
+        "y": 65,
+        "w": 1150,
+        "h": 24
+       },
+       "baseline": 85,
+       "fs": 24,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "section",
+     "sig": "section",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 122,
+      "w": 1216,
+      "h": 90
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 65,
+        "y": 155,
+        "w": 1150,
+        "h": 24
+       },
+       "baseline": 175,
+       "fs": 24,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "section",
+     "sig": "section.odd",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 212,
+      "w": 1216,
+      "h": 106
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 73,
+        "y": 253,
+        "w": 1134,
+        "h": 24
+       },
+       "baseline": 273,
+       "fs": 24,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "section",
+     "sig": "section",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 318,
+      "w": 1216,
+      "h": 90
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 65,
+        "y": 351,
+        "w": 1150,
+        "h": 24
+       },
+       "baseline": 371,
+       "fs": 24,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

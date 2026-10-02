@@ -1,0 +1,229 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul.list",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 36,
+        "w": 528,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 36,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 84,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 96,
+        "w": 528,
+        "h": 24
+       },
+       "baseline": 113,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 96,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 113,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 144,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 156,
+        "w": 528,
+        "h": 24
+       },
+       "baseline": 173,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 156,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 173,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 210,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 222,
+        "w": 528,
+        "h": 24
+       },
+       "baseline": 239,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 222,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 239,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 270,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 282,
+        "w": 528,
+        "h": 24
+       },
+       "baseline": 299,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 282,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 299,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

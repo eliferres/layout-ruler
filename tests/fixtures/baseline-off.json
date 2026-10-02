@@ -1,0 +1,229 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul.list",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 36,
+        "w": 240,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 280,
+        "y": 36,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 72,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 84,
+        "w": 240,
+        "h": 24
+       },
+       "baseline": 101,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 280,
+        "y": 84,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 101,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 120,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 132,
+        "w": 240,
+        "h": 24
+       },
+       "baseline": 149,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 280,
+        "y": 132,
+        "w": 80,
+        "h": 30
+       },
+       "baseline": 155,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 168,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 180,
+        "w": 240,
+        "h": 24
+       },
+       "baseline": 197,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 280,
+        "y": 180,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 197,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 216,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 228,
+        "w": 240,
+        "h": 24
+       },
+       "baseline": 245,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 280,
+        "y": 228,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 245,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

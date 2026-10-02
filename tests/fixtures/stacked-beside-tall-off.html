@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: stacked beside tall off</title>
+<style>
+  body { margin: 0; padding: 24px; font: 16px/24px Helvetica, Arial, sans-serif; color: #1f2430; }
+  .list { list-style: none; margin: 0; padding: 0; max-width: 640px; display: flex; flex-direction: column; gap: 16px; }
+  .row { display: grid; grid-template-columns: 200px 1fr; grid-template-rows: repeat(3, 24px); column-gap: 16px; }
+  .tall { grid-row: 1 / 4; padding-top: 4px; }
+  .line { grid-column: 2; }
+</style>
+</head>
+<body>
+  <ul class="list">
+    <li class="row"><span class="tall">Monday, most of the day</span><span class="line">Ada</span><span class="line">$120 open</span></li>
+    <li class="row"><span class="tall">Tuesday, most of the day</span><span class="line">Second Name</span><span class="line">$1,240 open</span></li>
+    <li class="row"><span class="tall">Wednesday, most of the day</span><span class="line">Client C</span><span class="line">$80 open</span></li>
+  </ul>
+</body>
+</html>

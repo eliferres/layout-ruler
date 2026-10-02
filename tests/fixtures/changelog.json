@@ -1,0 +1,247 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ol",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.n",
+       "box": {
+        "x": 32,
+        "y": 32,
+        "w": 40,
+        "h": 24
+       },
+       "baseline": 49,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 72,
+        "y": 35,
+        "w": 122.73,
+        "h": 18
+       },
+       "baseline": 49,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.d",
+       "box": {
+        "x": 199.19,
+        "y": 35,
+        "w": 60.48,
+        "h": 18
+       },
+       "baseline": 49,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 64,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.n",
+       "box": {
+        "x": 32,
+        "y": 64,
+        "w": 40,
+        "h": 24
+       },
+       "baseline": 81,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 72,
+        "y": 67,
+        "w": 130.77,
+        "h": 18
+       },
+       "baseline": 81,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.d",
+       "box": {
+        "x": 207.22,
+        "y": 67,
+        "w": 60.48,
+        "h": 18
+       },
+       "baseline": 81,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 96,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.n",
+       "box": {
+        "x": 32,
+        "y": 96,
+        "w": 40,
+        "h": 24
+       },
+       "baseline": 113,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 72,
+        "y": 99,
+        "w": 193,
+        "h": 18
+       },
+       "baseline": 113,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.d",
+       "box": {
+        "x": 269.45,
+        "y": 99,
+        "w": 60.48,
+        "h": 18
+       },
+       "baseline": 113,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 128,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.n",
+       "box": {
+        "x": 32,
+        "y": 128,
+        "w": 40,
+        "h": 24
+       },
+       "baseline": 145,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 72,
+        "y": 131,
+        "w": 72.05,
+        "h": 18
+       },
+       "baseline": 145,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.d",
+       "box": {
+        "x": 148.5,
+        "y": 131,
+        "w": 60.48,
+        "h": 18
+       },
+       "baseline": 145,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: aligned list</title>
+<style>
+  body { margin: 0; padding: 24px; font: 16px/24px Helvetica, Arial, sans-serif; color: #1f2430; }
+  .list { list-style: none; margin: 0; padding: 0; max-width: 640px; display: grid; grid-template-columns: auto auto 1fr auto; column-gap: 16px; }
+  .row { display: grid; grid-template-columns: subgrid; grid-column: 1 / -1; align-items: center; padding: 12px 16px; break-inside: avoid; }
+  .note { max-width: 520px; margin: 0 0 24px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #c05a3c; }
+  .value { width: 80px; text-align: right; }
+</style>
+</head>
+<body>
+    <p class="note">Five rows in one list. Each row takes the same four column tracks from its parent, so the marker, the label and the figure line up from the top row to the bottom, however long the text in front of them is. This paragraph is long on purpose so that it wraps.</p>
+  <ul class="list">
+    <li class="row"><span class="name">Ada</span><span class="dot"></span><span class="status">Late</span><span class="value">$120</span></li>
+    <li class="row"><span class="name">Second Customer Name</span><span class="dot"></span><span class="status">Sent</span><span class="value">$1,240</span></li>
+    <li class="row"><span class="name">Client C</span><span class="dot"></span><span class="status">Paid</span><span class="value">$80</span></li>
+    <li class="row"><span class="name">Fourth Client Name</span><span class="dot"></span><span class="status">Late</span><span class="value">$460</span></li>
+    <li class="row"><span class="name">Eve</span><span class="dot"></span><span class="status">Sent</span><span class="value">$95</span></li>
+  </ul>
+</body>
+</html>

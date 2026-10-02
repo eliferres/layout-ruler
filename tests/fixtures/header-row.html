@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: header row</title>
+<style>
+body{margin:0;padding:24px;font:16px/24px Helvetica,Arial,sans-serif;color:#1f2430}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:640px}
+.grid > div{display:grid;grid-template-columns:subgrid;grid-column:1/-1;padding:12px 16px}
+.grid > .head{padding:4px 16px;font-size:12px;line-height:16px;text-transform:uppercase}
+</style></head><body>
+<div class="grid">
+<div class="head"><span>Name</span><span>Status</span><span>Amount</span></div>
+<div><span>Ada</span><span>Late</span><span>$120</span></div>
+<div><span>Beta</span><span>Sent</span><span>$1,240</span></div>
+<div><span>Cleo</span><span>Paid</span><span>$80</span></div>
+<div><span>Client D</span><span>Late</span><span>$460</span></div>
+</div>
+</body></html>

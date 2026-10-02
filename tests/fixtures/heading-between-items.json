@@ -1,0 +1,131 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.list",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "div",
+     "sig": "div.item",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 640,
+      "h": 50
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "div.item",
+       "box": {
+        "x": 24,
+        "y": 24,
+        "w": 640,
+        "h": 50
+       },
+       "baseline": 54,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.item",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 90,
+      "w": 640,
+      "h": 50
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "div.item",
+       "box": {
+        "x": 24,
+        "y": 90,
+        "w": 640,
+        "h": 50
+       },
+       "baseline": 120,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.item",
+     "run": 1,
+     "box": {
+      "x": 24,
+      "y": 220,
+      "w": 640,
+      "h": 50
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "div.item",
+       "box": {
+        "x": 24,
+        "y": 220,
+        "w": 640,
+        "h": 50
+       },
+       "baseline": 250,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.item",
+     "run": 1,
+     "box": {
+      "x": 24,
+      "y": 286,
+      "w": 640,
+      "h": 50
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "div.item",
+       "box": {
+        "x": 24,
+        "y": 286,
+        "w": 640,
+        "h": 50
+       },
+       "baseline": 316,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

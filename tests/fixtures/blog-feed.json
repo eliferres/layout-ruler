@@ -1,0 +1,355 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 944,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.feed",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "article",
+     "sig": "article.post.post--text",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 640,
+      "h": 88
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 32,
+        "y": 32,
+        "w": 640,
+        "h": 28
+       },
+       "baseline": 53,
+       "fs": 20,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.meta",
+       "box": {
+        "x": 32,
+        "y": 68,
+        "w": 640,
+        "h": 20
+       },
+       "baseline": 83,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p",
+       "box": {
+        "x": 32,
+        "y": 96,
+        "w": 640,
+        "h": 24
+       },
+       "baseline": 114,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "article",
+     "sig": "article.post.post--image",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 152,
+      "w": 640,
+      "h": 184
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "div.pic",
+       "box": {
+        "x": 32,
+        "y": 160,
+        "w": 640,
+        "h": 120
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "h2",
+       "box": {
+        "x": 32,
+        "y": 280,
+        "w": 640,
+        "h": 28
+       },
+       "baseline": 301,
+       "fs": 20,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.meta",
+       "box": {
+        "x": 32,
+        "y": 316,
+        "w": 640,
+        "h": 20
+       },
+       "baseline": 331,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "article",
+     "sig": "article.off.post.post--text",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 368,
+      "w": 640,
+      "h": 88
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 32,
+        "y": 368,
+        "w": 640,
+        "h": 28
+       },
+       "baseline": 389,
+       "fs": 20,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.meta",
+       "box": {
+        "x": 40,
+        "y": 404,
+        "w": 640,
+        "h": 20
+       },
+       "baseline": 419,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p",
+       "box": {
+        "x": 32,
+        "y": 432,
+        "w": 640,
+        "h": 24
+       },
+       "baseline": 450,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "article",
+     "sig": "article.post.post--link",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 488,
+      "w": 640,
+      "h": 88
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 32,
+        "y": 488,
+        "w": 640,
+        "h": 28
+       },
+       "baseline": 509,
+       "fs": 20,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "a.out",
+       "box": {
+        "x": 32,
+        "y": 524,
+        "w": 640,
+        "h": 24
+       },
+       "baseline": 542,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.meta",
+       "box": {
+        "x": 32,
+        "y": 556,
+        "w": 640,
+        "h": 20
+       },
+       "baseline": 571,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "article",
+     "sig": "article.post.post--text",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 608,
+      "w": 640,
+      "h": 88
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h2",
+       "box": {
+        "x": 32,
+        "y": 608,
+        "w": 640,
+        "h": 28
+       },
+       "baseline": 629,
+       "fs": 20,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.meta",
+       "box": {
+        "x": 32,
+        "y": 644,
+        "w": 640,
+        "h": 20
+       },
+       "baseline": 659,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p",
+       "box": {
+        "x": 32,
+        "y": 672,
+        "w": 640,
+        "h": 24
+       },
+       "baseline": 690,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "article",
+     "sig": "article.post.post--image",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 728,
+      "w": 640,
+      "h": 184
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "div.pic",
+       "box": {
+        "x": 32,
+        "y": 736,
+        "w": 640,
+        "h": 120
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "h2",
+       "box": {
+        "x": 32,
+        "y": 856,
+        "w": 640,
+        "h": 28
+       },
+       "baseline": 877,
+       "fs": 20,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.meta",
+       "box": {
+        "x": 32,
+        "y": 892,
+        "w": 640,
+        "h": 20
+       },
+       "baseline": 907,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

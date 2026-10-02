@@ -1,0 +1,369 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul.list",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 144,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 156,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 173,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 231.19,
+        "y": 163,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.status",
+       "box": {
+        "x": 257.19,
+        "y": 156,
+        "w": 294.81,
+        "h": 24
+       },
+       "baseline": 173,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 156,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 173,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 192,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 204,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 221,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 231.19,
+        "y": 211,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.status",
+       "box": {
+        "x": 257.19,
+        "y": 204,
+        "w": 294.81,
+        "h": 24
+       },
+       "baseline": 221,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 204,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 221,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 240,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 252,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 269,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 231.19,
+        "y": 259,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.status",
+       "box": {
+        "x": 257.19,
+        "y": 252,
+        "w": 294.81,
+        "h": 24
+       },
+       "baseline": 269,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 252,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 269,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 288,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 300,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 317,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 231.19,
+        "y": 307,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.status",
+       "box": {
+        "x": 257.19,
+        "y": 300,
+        "w": 294.81,
+        "h": 24
+       },
+       "baseline": 317,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 300,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 317,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li.row",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 336,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 348,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 365,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 231.19,
+        "y": 355,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.status",
+       "box": {
+        "x": 257.19,
+        "y": 348,
+        "w": 294.81,
+        "h": 24
+       },
+       "baseline": 365,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.value",
+       "box": {
+        "x": 568,
+        "y": 348,
+        "w": 80,
+        "h": 24
+       },
+       "baseline": 365,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

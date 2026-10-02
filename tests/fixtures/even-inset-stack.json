@@ -1,0 +1,131 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.stack",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "a",
+     "sig": "a.b",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 200,
+      "h": 40
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a.b",
+       "box": {
+        "x": 32,
+        "y": 32,
+        "w": 200,
+        "h": 40
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a.b",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 80,
+      "w": 200,
+      "h": 40
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a.b",
+       "box": {
+        "x": 32,
+        "y": 80,
+        "w": 200,
+        "h": 40
+       },
+       "baseline": 106,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a.b.odd",
+     "run": 0,
+     "box": {
+      "x": 38,
+      "y": 128,
+      "w": 188,
+      "h": 40
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a.b.odd",
+       "box": {
+        "x": 38,
+        "y": 128,
+        "w": 188,
+        "h": 40
+       },
+       "baseline": 154,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a.b",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 176,
+      "w": 200,
+      "h": 40
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a.b",
+       "box": {
+        "x": 32,
+        "y": 176,
+        "w": 200,
+        "h": 40
+       },
+       "baseline": 202,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

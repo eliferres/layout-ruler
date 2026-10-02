@@ -1,0 +1,339 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > table > tbody",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "tr",
+     "sig": "tr",
+     "run": 0,
+     "box": {
+      "x": 26,
+      "y": 26,
+      "w": 332.34,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "td",
+       "box": {
+        "x": 26,
+        "y": 26,
+        "w": 191.19,
+        "h": 40
+       },
+       "baseline": 51,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 219.19,
+        "y": 26,
+        "w": 103.36,
+        "h": 40
+       },
+       "baseline": 51,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "i.dot",
+        "box": {
+         "x": 227.19,
+         "y": 41,
+         "w": 10,
+         "h": 10
+        }
+       }
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 324.55,
+        "y": 26,
+        "w": 33.8,
+        "h": 40
+       },
+       "baseline": 51,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "tr",
+     "sig": "tr",
+     "run": 0,
+     "box": {
+      "x": 26,
+      "y": 68,
+      "w": 332.34,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "td",
+       "box": {
+        "x": 26,
+        "y": 68,
+        "w": 191.19,
+        "h": 40
+       },
+       "baseline": 93,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 219.19,
+        "y": 68,
+        "w": 103.36,
+        "h": 40
+       },
+       "baseline": 93,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "i.dot",
+        "box": {
+         "x": 237.19,
+         "y": 83,
+         "w": 10,
+         "h": 10
+        }
+       }
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 324.55,
+        "y": 68,
+        "w": 33.8,
+        "h": 40
+       },
+       "baseline": 93,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "tr",
+     "sig": "tr",
+     "run": 0,
+     "box": {
+      "x": 26,
+      "y": 110,
+      "w": 332.34,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "td",
+       "box": {
+        "x": 26,
+        "y": 110,
+        "w": 191.19,
+        "h": 40
+       },
+       "baseline": 135,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 219.19,
+        "y": 110,
+        "w": 103.36,
+        "h": 40
+       },
+       "baseline": 135,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "i.dot",
+        "box": {
+         "x": 247.19,
+         "y": 125,
+         "w": 10,
+         "h": 10
+        }
+       }
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 324.55,
+        "y": 110,
+        "w": 33.8,
+        "h": 40
+       },
+       "baseline": 135,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "tr",
+     "sig": "tr",
+     "run": 0,
+     "box": {
+      "x": 26,
+      "y": 152,
+      "w": 332.34,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "td",
+       "box": {
+        "x": 26,
+        "y": 152,
+        "w": 191.19,
+        "h": 40
+       },
+       "baseline": 177,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 219.19,
+        "y": 152,
+        "w": 103.36,
+        "h": 40
+       },
+       "baseline": 177,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "i.dot",
+        "box": {
+         "x": 257.19,
+         "y": 167,
+         "w": 10,
+         "h": 10
+        }
+       }
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 324.55,
+        "y": 152,
+        "w": 33.8,
+        "h": 40
+       },
+       "baseline": 177,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "tr",
+     "sig": "tr",
+     "run": 0,
+     "box": {
+      "x": 26,
+      "y": 194,
+      "w": 332.34,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "td",
+       "box": {
+        "x": 26,
+        "y": 194,
+        "w": 191.19,
+        "h": 40
+       },
+       "baseline": 219,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 219.19,
+        "y": 194,
+        "w": 103.36,
+        "h": 40
+       },
+       "baseline": 219,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "i.dot",
+        "box": {
+         "x": 267.19,
+         "y": 209,
+         "w": 10,
+         "h": 10
+        }
+       }
+      },
+      {
+       "sig": "td",
+       "box": {
+        "x": 324.55,
+        "y": 194,
+        "w": 33.8,
+        "h": 40
+       },
+       "baseline": 219,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

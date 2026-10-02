@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: mixed shapes</title>
+<style>
+body{margin:0;padding:24px;font:16px/24px Helvetica,Arial,sans-serif;color:#1f2430}
+section{margin:0 0 40px;max-width:640px}
+ul{list-style:none;margin:0;padding:0}
+#before-dot li{display:grid;grid-template-columns:1fr auto 80px;column-gap:16px;padding:12px 16px;align-items:center}
+#before-dot .status{justify-self:end}
+#before-dot .status::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:#c05a3c;margin-right:6px}
+#trailing li{display:grid;grid-template-columns:1fr 80px;column-gap:16px;padding:12px 16px;align-items:center}
+#trailing a{color:inherit;display:inline-flex;align-items:center;gap:4px;justify-self:start}
+#trailing svg{width:12px;height:12px}
+#flex-ragged li{display:flex;gap:8px;align-items:center;padding:12px 16px}
+#flex-ragged .dot{width:10px;height:10px;border-radius:50%;background:#c05a3c}
+#header-row .grid{display:grid;grid-template-columns:repeat(3,1fr)}
+#header-row .grid > div{display:grid;grid-template-columns:subgrid;grid-column:1/-1;padding:12px 16px}
+#header-row .grid > .head{padding:4px 16px;font-size:12px;line-height:16px;text-transform:uppercase}
+#pill ul{display:grid;grid-template-columns:auto auto 1fr;column-gap:16px}
+#pill li{display:grid;grid-template-columns:subgrid;grid-column:1/-1;align-items:center;padding:12px 16px}
+#pill .pill{font-size:12px;line-height:16px;padding:2px 8px;border-radius:999px;background:#eef}
+#glyph li{display:grid;grid-template-columns:1fr 80px;column-gap:16px;padding:12px 16px}
+#glyph .g{color:#c05a3c;margin-left:6px}
+#mixed li{display:grid;grid-template-columns:200px auto 1fr;column-gap:16px;padding:12px 16px}
+#mixed .off{margin-left:30px}
+</style></head><body>
+<section id="before-dot"><ul>
+<li><span class="name">Ada</span><span class="status">Late</span><span class="value">$1</span></li>
+<li><span class="name">Second Name</span><span class="status">Sent - awaiting review</span><span class="value">$1</span></li>
+<li><span class="name">Cleo</span><span class="status">Paid</span><span class="value">$1</span></li>
+<li><span class="name">Client D</span><span class="status">Pending 30 days</span><span class="value">$1</span></li>
+</ul></section>
+<section id="trailing"><ul>
+<li><a href="#">Docs<svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6" stroke="#000" fill="none"/></svg></a><span class="v">12</span></li>
+<li><a href="#">History and version notes<svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6" stroke="#000" fill="none"/></svg></a><span class="v">3</span></li>
+<li><a href="#">API<svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6" stroke="#000" fill="none"/></svg></a><span class="v">7</span></li>
+<li><a href="#">Status page<svg viewBox="0 0 12 12"><path d="M2 10L10 2M4 2h6v6" stroke="#000" fill="none"/></svg></a><span class="v">1</span></li>
+</ul></section>
+<section id="flex-ragged"><ul>
+<li><span class="name">Ada</span><span class="dot"></span><span class="status">Late</span></li>
+<li><span class="name">Second Customer Name</span><span class="dot"></span><span class="status">Sent</span></li>
+<li><span class="name">Client C</span><span class="dot"></span><span class="status">Paid</span></li>
+<li><span class="name">Client D</span><span class="dot"></span><span class="status">Late</span></li>
+</ul></section>
+<section id="header-row"><div class="grid">
+<div class="head"><span>Name</span><span>Status</span><span>Amount</span></div>
+<div><span>Ada</span><span>Late</span><span>$120</span></div>
+<div><span>Beta</span><span>Sent</span><span>$1,240</span></div>
+<div><span>Cleo</span><span>Paid</span><span>$80</span></div>
+<div><span>Client D</span><span>Late</span><span>$460</span></div>
+</div></section>
+<section id="pill"><ul>
+<li><span class="name">Ada</span><span class="pill">Late</span><span class="v">$1</span></li>
+<li><span class="name">Second Name</span><span class="pill">Sent</span><span class="v">$1</span></li>
+<li><span class="name">Cleo</span><span class="pill">Paid</span><span class="v">$1</span></li>
+<li><span class="name">Client D</span><span class="pill">Late</span><span class="v">$1</span></li>
+</ul></section>
+<section id="glyph"><ul>
+<li><span class="name">Ada<span class="g">●</span></span><span class="v">$1</span></li>
+<li><span class="name">Second Customer Name<span class="g">●</span></span><span class="v">$1</span></li>
+<li><span class="name">Cleo<span class="g">●</span></span><span class="v">$1</span></li>
+<li><span class="name">Client D<span class="g">●</span></span><span class="v">$1</span></li>
+</ul></section>
+<section id="mixed"><ul>
+<li><span class="name">Ada</span><span class="s">Late</span><span class="v">$1</span></li>
+<li><span class="name">Beta</span><a class="s off" href="#">Sent</a><span class="v">$1</span></li>
+<li><span class="name">Cleo</span><span class="s">Paid</span><span class="v">$1</span></li>
+<li><span class="name">Client D</span><a class="s" href="#">Late</a><span class="v">$1</span></li>
+<li><span class="name">Eve</span><span class="s">Paid</span><span class="v">$1</span></li>
+</ul></section>
+</body></html>

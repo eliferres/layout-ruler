@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: unequal heights vary</title>
+<style>
+  body { margin: 0; padding: 24px; font: 16px/24px Helvetica, Arial, sans-serif; color: #1f2430; }
+  .list { list-style: none; margin: 0; padding: 0; max-width: 640px; display: flex; flex-direction: column; gap: 12px; }
+  .card { display: grid; grid-template-columns: 1fr 80px; align-items: center; padding: 12px 16px; background: #f3f1ec; }
+  .card:nth-child(3) { min-height: 72px; box-sizing: border-box; }
+  .value { text-align: right; }
+</style>
+</head>
+<body>
+  <ul class="list" data-ruler="vary-height">
+    <li class="card"><span class="name">Ada</span><span class="value">$120</span></li>
+    <li class="card"><span class="name">Second Customer Name</span><span class="value">$1,240</span></li>
+    <li class="card"><span class="name">Client C</span><span class="value">$80</span></li>
+    <li class="card"><span class="name">Fourth Client Name</span><span class="value">$460</span></li>
+    <li class="card"><span class="name">Eve</span><span class="value">$95</span></li>
+  </ul>
+</body>
+</html>

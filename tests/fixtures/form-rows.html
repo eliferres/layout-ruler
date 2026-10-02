@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta name=viewport content="width=device-width,initial-scale=1"><style>
+*{box-sizing:border-box;margin:0;padding:0}body{font:16px/24px system-ui,sans-serif;padding:32px}
+.form{display:flex;flex-direction:column;gap:16px;max-width:900px}
+.field{display:grid;grid-template-columns:160px 320px 1fr;gap:16px;align-items:baseline}
+.field input,.field select{height:36px;width:320px;font:inherit}
+.field small{color:#666;font-size:14px;line-height:20px}
+.bad input{margin-left:12px;width:308px}
+</style></head><body><form class=form>
+<div class="field field--text"><label>Name</label><input value="Jane"><small>Shown on reports</small></div>
+<div class="field field--text"><label>Email</label><input value="e@x.com"><small>We keep it private</small></div>
+<div class="field field--text bad"><label>Company</label><input value="Example"><small>Optional</small></div>
+<div class="field field--select"><label>Plan</label><select><option>Team</option></select><small>Change any time</small></div>
+<div class="field field--text"><label>Phone</label><input value="555"><small>For quick replies</small></div>
+</form></body></html>

@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta name=viewport content="width=device-width,initial-scale=1"><style>
+*{box-sizing:border-box;margin:0;padding:0}body{font:16px/24px system-ui,sans-serif;padding:32px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:600px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid #ccc;border-radius:12px;padding:24px}
+.tier h3{font-size:20px;line-height:28px;margin-bottom:8px}.price{font-size:32px;line-height:40px;margin-bottom:16px}
+.features{list-style:none;display:flex;flex-direction:column;gap:12px}
+.features li{display:flex;gap:8px;align-items:center}
+.features svg{width:16px;height:16px;flex:none}
+.rag li:nth-child(3) svg{margin-left:9px}
+</style></head><body><div class=tiers>
+<div class=tier><h3>Starter</h3><p class=price>$9</p><ul class=features>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>One user</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Five projects</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Email help</span></li>
+<li class=no><i class=x>-</i><span>Exports</span></li></ul></div>
+<div class=tier><h3>Team</h3><p class=price>$29</p><ul class="features rag">
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Ten users</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>All projects</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Chat help</span></li>
+<li class=no><i class=x>-</i><span>Exports</span></li></ul></div>
+<div class=tier><h3>Scale</h3><p class=price>$99</p><ul class=features>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Unlimited</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>SSO</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Phone help</span></li>
+<li class=yes><svg viewBox="0 0 16 16"><circle cx=8 cy=8 r=6 /></svg><span>Event log</span></li></ul></div>
+</div></body></html>

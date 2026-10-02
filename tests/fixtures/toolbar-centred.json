@@ -1,0 +1,314 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.bar",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "button",
+     "sig": "button.icon",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 36,
+      "w": 32,
+      "h": 32
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "button.icon",
+       "box": {
+        "x": 32,
+        "y": 36,
+        "w": 32,
+        "h": 32
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "button",
+     "sig": "button.icon",
+     "run": 0,
+     "box": {
+      "x": 72,
+      "y": 36,
+      "w": 32,
+      "h": 32
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "button.icon",
+       "box": {
+        "x": 72,
+        "y": 36,
+        "w": 32,
+        "h": 32
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "button",
+     "sig": "button.icon",
+     "run": 0,
+     "box": {
+      "x": 112,
+      "y": 36,
+      "w": 32,
+      "h": 32
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "button.icon",
+       "box": {
+        "x": 112,
+        "y": 36,
+        "w": 32,
+        "h": 32
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "button",
+     "sig": "button.primary",
+     "run": 0,
+     "box": {
+      "x": 152,
+      "y": 32,
+      "w": 86.94,
+      "h": 40
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "button.primary",
+       "box": {
+        "x": 152,
+        "y": 32,
+        "w": 86.94,
+        "h": 40
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      }
+     ]
+    }
+   ],
+   "centred": true
+  },
+  {
+   "path": "body > nav.crumbs > a",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 96,
+      "w": 38.25,
+      "h": 20
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 32,
+        "y": 96,
+        "w": 38.25,
+        "h": 20
+       },
+       "baseline": 111,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 1,
+     "box": {
+      "x": 96.25,
+      "y": 96,
+      "w": 44.42,
+      "h": 20
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 96.25,
+        "y": 96,
+        "w": 44.42,
+        "h": 20
+       },
+       "baseline": 111,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 2,
+     "box": {
+      "x": 166.67,
+      "y": 96,
+      "w": 36.44,
+      "h": 20
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 166.67,
+        "y": 96,
+        "w": 36.44,
+        "h": 20
+       },
+       "baseline": 111,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ],
+   "centred": true
+  },
+  {
+   "path": "body > nav.crumbs > svg",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "svg",
+     "sig": "svg",
+     "run": 1,
+     "box": {
+      "x": 78.25,
+      "y": 101,
+      "w": 10,
+      "h": 10
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 78.25,
+        "y": 101,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "svg",
+     "sig": "svg",
+     "run": 2,
+     "box": {
+      "x": 148.67,
+      "y": 101,
+      "w": 10,
+      "h": 10
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 148.67,
+        "y": 101,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "svg",
+     "sig": "svg",
+     "run": 3,
+     "box": {
+      "x": 211.11,
+      "y": 101,
+      "w": 10,
+      "h": 10
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 211.11,
+        "y": 101,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      }
+     ]
+    }
+   ],
+   "centred": true
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

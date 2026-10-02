@@ -1,0 +1,247 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 32,
+        "y": 35,
+        "w": 16,
+        "h": 16
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 56,
+        "y": 35,
+        "w": 82.72,
+        "h": 18
+       },
+       "baseline": 49,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.m",
+       "box": {
+        "x": 143.17,
+        "y": 36,
+        "w": 42.83,
+        "h": 16
+       },
+       "baseline": 49,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 64,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 32,
+        "y": 67,
+        "w": 16,
+        "h": 16
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 56,
+        "y": 67,
+        "w": 194.78,
+        "h": 18
+       },
+       "baseline": 81,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.m",
+       "box": {
+        "x": 255.23,
+        "y": 68,
+        "w": 60.7,
+        "h": 16
+       },
+       "baseline": 81,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 96,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 32,
+        "y": 99,
+        "w": 16,
+        "h": 16
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 56,
+        "y": 99,
+        "w": 104.06,
+        "h": 18
+       },
+       "baseline": 113,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.m",
+       "box": {
+        "x": 164.52,
+        "y": 100,
+        "w": 44.38,
+        "h": 16
+       },
+       "baseline": 113,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 128,
+      "w": 1216,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "svg",
+       "box": {
+        "x": 32,
+        "y": 131,
+        "w": 16,
+        "h": 16
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span.t",
+       "box": {
+        "x": 56,
+        "y": 131,
+        "w": 120.98,
+        "h": 18
+       },
+       "baseline": 145,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.m",
+       "box": {
+        "x": 181.44,
+        "y": 132,
+        "w": 44.38,
+        "h": 16
+       },
+       "baseline": 145,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null,
+       "flow": true
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

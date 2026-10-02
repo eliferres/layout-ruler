@@ -1,0 +1,1963 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.grid",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 41,
+        "y": 59.72,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 77.72,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 41,
+        "y": 102.44,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 348,
+      "y": 24,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 365,
+        "y": 59.72,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 77.72,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 365,
+        "y": 102.44,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 672,
+      "y": 24,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 689,
+        "y": 59.72,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 77.72,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 689,
+        "y": 102.44,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 215.44,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 41,
+        "y": 251.16,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 269.16,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 41,
+        "y": 293.88,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 348,
+      "y": 215.44,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 365,
+        "y": 251.16,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 269.16,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 365,
+        "y": 293.88,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 672,
+      "y": 215.44,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 689,
+        "y": 251.16,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 269.16,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 689,
+        "y": 293.88,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 406.88,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 41,
+        "y": 442.59,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 460.59,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 41,
+        "y": 485.31,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 348,
+      "y": 406.88,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 365,
+        "y": 442.59,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 460.59,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 365,
+        "y": 485.31,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 672,
+      "y": 406.88,
+      "w": 300,
+      "h": 167.44
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 689,
+        "y": 442.59,
+        "w": 266,
+        "h": 24
+       },
+       "baseline": 460.59,
+       "fs": 18.72,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "ul",
+       "box": {
+        "x": 689,
+        "y": 485.31,
+        "w": 266,
+        "h": 72
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 3,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 102.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 102.44,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 85.47,
+        "y": 109.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 111.47,
+        "y": 102.44,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 126.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 126.44,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 143.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 158.39,
+        "y": 133.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 184.39,
+        "y": 126.44,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 143.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 150.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 150.44,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 167.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 89.91,
+        "y": 157.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 115.91,
+        "y": 150.44,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 167.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 102.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 102.44,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 409.47,
+        "y": 109.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 435.47,
+        "y": 102.44,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 126.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 126.44,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 143.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 482.39,
+        "y": 133.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 508.39,
+        "y": 126.44,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 143.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 150.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 150.44,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 167.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 413.91,
+        "y": 157.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 439.91,
+        "y": 150.44,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 167.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 102.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 102.44,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 733.47,
+        "y": 109.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 759.47,
+        "y": 102.44,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 119.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 126.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 126.44,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 143.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 806.39,
+        "y": 133.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 832.39,
+        "y": 126.44,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 143.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 150.44,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 150.44,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 167.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 737.91,
+        "y": 157.44,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 763.91,
+        "y": 150.44,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 167.44,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 293.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 293.88,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 85.47,
+        "y": 300.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 111.47,
+        "y": 293.88,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 317.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 317.88,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 334.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 158.39,
+        "y": 324.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 184.39,
+        "y": 317.88,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 334.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 341.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 341.88,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 358.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 89.91,
+        "y": 348.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 115.91,
+        "y": 341.88,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 358.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 293.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 293.88,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 409.47,
+        "y": 300.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 435.47,
+        "y": 293.88,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 317.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 317.88,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 334.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 482.39,
+        "y": 324.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 508.39,
+        "y": 317.88,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 334.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 341.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 341.88,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 358.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 413.91,
+        "y": 348.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 439.91,
+        "y": 341.88,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 358.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 293.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 293.88,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 733.47,
+        "y": 300.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 759.47,
+        "y": 293.88,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 310.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 317.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 317.88,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 334.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 806.39,
+        "y": 324.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 832.39,
+        "y": 317.88,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 334.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 341.88,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 341.88,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 358.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 737.91,
+        "y": 348.88,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 763.91,
+        "y": 341.88,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 358.88,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 485.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 485.31,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 85.47,
+        "y": 492.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 111.47,
+        "y": 485.31,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 509.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 509.31,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 526.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 158.39,
+        "y": 516.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 184.39,
+        "y": 509.31,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 526.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 533.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 41,
+        "y": 533.31,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 550.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 89.91,
+        "y": 540.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 115.91,
+        "y": 533.31,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 550.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 485.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 485.31,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 409.47,
+        "y": 492.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 435.47,
+        "y": 485.31,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 509.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 509.31,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 526.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 482.39,
+        "y": 516.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 508.39,
+        "y": 509.31,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 526.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 365,
+      "y": 533.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 365,
+        "y": 533.31,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 550.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 413.91,
+        "y": 540.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 439.91,
+        "y": 533.31,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 550.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.grid > div.card > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 485.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 485.31,
+        "w": 28.47,
+        "h": 24
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 733.47,
+        "y": 492.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 759.47,
+        "y": 485.31,
+        "w": 195.53,
+        "h": 24
+       },
+       "baseline": 502.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 509.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 509.31,
+        "w": 101.39,
+        "h": 24
+       },
+       "baseline": 526.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 806.39,
+        "y": 516.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 832.39,
+        "y": 509.31,
+        "w": 122.61,
+        "h": 24
+       },
+       "baseline": 526.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 689,
+      "y": 533.31,
+      "w": 266,
+      "h": 24
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 689,
+        "y": 533.31,
+        "w": 32.91,
+        "h": 24
+       },
+       "baseline": 550.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.dot",
+       "box": {
+        "x": 737.91,
+        "y": 540.31,
+        "w": 10,
+        "h": 10
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      },
+      {
+       "sig": "span",
+       "box": {
+        "x": 763.91,
+        "y": 533.31,
+        "w": 191.09,
+        "h": 24
+       },
+       "baseline": 550.31,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

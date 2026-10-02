@@ -1,0 +1,131 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > nav",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 63.05,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 32,
+        "y": 32,
+        "w": 63.05,
+        "h": 42
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a.wide",
+     "run": 0,
+     "box": {
+      "x": 103.05,
+      "y": 32,
+      "w": 67.81,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a.wide",
+       "box": {
+        "x": 103.05,
+        "y": 32,
+        "w": 67.81,
+        "h": 42
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a.low",
+     "run": 0,
+     "box": {
+      "x": 190.86,
+      "y": 36,
+      "w": 75.5,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a.low",
+       "box": {
+        "x": 190.86,
+        "y": 36,
+        "w": 75.5,
+        "h": 42
+       },
+       "baseline": 62,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 274.36,
+      "y": 32,
+      "w": 81.14,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 274.36,
+        "y": 32,
+        "w": 81.14,
+        "h": 42
+       },
+       "baseline": 58,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

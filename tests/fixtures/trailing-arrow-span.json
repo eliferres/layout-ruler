@@ -1,0 +1,145 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 1232,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 24,
+        "y": 32,
+        "w": 36.45,
+        "h": 24
+       },
+       "baseline": 49,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "svg",
+       "box": {
+        "x": 68.45,
+        "y": 32,
+        "w": 12,
+        "h": 12
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 64,
+      "w": 1232,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 24,
+        "y": 72,
+        "w": 73.8,
+        "h": 24
+       },
+       "baseline": 89,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "svg",
+       "box": {
+        "x": 105.8,
+        "y": 72,
+        "w": 12,
+        "h": 12
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 104,
+      "w": 1232,
+      "h": 40
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span",
+       "box": {
+        "x": 24,
+        "y": 112,
+        "w": 25.8,
+        "h": 24
+       },
+       "baseline": 129,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "svg",
+       "box": {
+        "x": 57.8,
+        "y": 112,
+        "w": 12,
+        "h": 12
+       },
+       "baseline": null,
+       "fs": null,
+       "text": false,
+       "lines": null,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

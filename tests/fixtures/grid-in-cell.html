@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: grid in cell</title>
+<style>
+body{margin:0;padding:24px;font:16px/24px Helvetica,Arial,sans-serif;color:#1f2430}
+.cards{display:grid;gap:24px;max-width:640px}
+.card{border:1px solid #ddd;padding:16px}
+h3{margin:0 0 12px;font-size:18px;line-height:24px}
+.pill{display:inline-flex;align-items:center;gap:6px;margin-left:8px;padding:0 8px;font-size:12px;line-height:24px;background:#eef;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:#c05a3c}
+.stats{display:flex;gap:16px;align-items:flex-start}
+.stat{flex:1}
+.stat b,.stat small{display:block}
+.links{display:flex;gap:16px;margin-top:12px}
+.links a{color:inherit;padding:8px 12px;border:1px solid #ddd}
+.low{position:relative;top:10px}
+</style></head><body>
+<div class="cards">
+<div class="card"><h3>Lighthouse<span class="pill"><span class="dot"></span><span>Open</span><span>3</span></span></h3>
+ <div class="stats"><div class="stat"><b>12</b><small>jobs</small></div><div class="stat"><b>4</b><small>late</small></div><div class="stat"><b>$9k</b><small>due</small></div></div>
+ <div class="foot"><div class="links"><a href="#">Open</a><a href="#">Assign</a><a href="#">Close</a></div></div></div>
+<div class="card"><h3>Intake<span class="pill"><span class="dot"></span><span>Open</span><span>7</span></span></h3>
+ <div class="stats"><div class="stat"><b>30</b><small>jobs</small></div><div class="stat low"><b>2</b><small>late</small></div><div class="stat"><b>$4k</b><small>due</small></div></div>
+ <div class="foot"><div class="links"><a href="#">Open</a><a href="#">Assign</a><a href="#">Close</a></div></div></div>
+<div class="card"><h3>Inventory<span class="pill"><span class="dot"></span><span>Open</span><span>1</span></span></h3>
+ <div class="stats"><div class="stat"><b>8</b><small>jobs</small></div><div class="stat"><b>0</b><small>late</small></div><div class="stat"><b>$1k</b><small>due</small></div></div>
+ <div class="foot"><div class="links"><a href="#">Open</a><a href="#">Assign</a><a href="#">Close</a></div></div></div>
+</div>
+</body></html>

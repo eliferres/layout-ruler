@@ -1,0 +1,229 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 32,
+      "w": 640,
+      "h": 154
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 49,
+        "y": 49,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 67,
+       "fs": 18,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.meta",
+       "box": {
+        "x": 49,
+        "y": 77,
+        "w": 606,
+        "h": 20
+       },
+       "baseline": 92,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.body",
+       "box": {
+        "x": 49,
+        "y": 105,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 122,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.body",
+       "box": {
+        "x": 49,
+        "y": 137,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 154,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 202,
+      "w": 640,
+      "h": 154
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 57,
+        "y": 219,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 237,
+       "fs": 18,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.meta",
+       "box": {
+        "x": 49,
+        "y": 247,
+        "w": 606,
+        "h": 20
+       },
+       "baseline": 262,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.body",
+       "box": {
+        "x": 49,
+        "y": 275,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 292,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.body",
+       "box": {
+        "x": 49,
+        "y": 307,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 324,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 32,
+      "y": 372,
+      "w": 640,
+      "h": 154
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 49,
+        "y": 389,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 407,
+       "fs": 18,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.meta",
+       "box": {
+        "x": 49,
+        "y": 417,
+        "w": 606,
+        "h": 20
+       },
+       "baseline": 432,
+       "fs": 14,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.body",
+       "box": {
+        "x": 49,
+        "y": 445,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 462,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "p.body",
+       "box": {
+        "x": 49,
+        "y": 477,
+        "w": 606,
+        "h": 24
+       },
+       "baseline": 494,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

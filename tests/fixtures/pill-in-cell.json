@@ -1,0 +1,275 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > ul",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 36,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.pill",
+       "box": {
+        "x": 231.19,
+        "y": 36,
+        "w": 86.72,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "span.dot",
+        "box": {
+         "x": 239.19,
+         "y": 44,
+         "w": 8,
+         "h": 8
+        }
+       }
+      },
+      {
+       "sig": "span.v",
+       "box": {
+        "x": 333.91,
+        "y": 36,
+        "w": 314.09,
+        "h": 24
+       },
+       "baseline": 53,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 72,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 84,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 101,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.pill",
+       "box": {
+        "x": 231.19,
+        "y": 84,
+        "w": 86.72,
+        "h": 24
+       },
+       "baseline": 101,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "span.dot",
+        "box": {
+         "x": 239.19,
+         "y": 92,
+         "w": 8,
+         "h": 8
+        }
+       }
+      },
+      {
+       "sig": "span.v",
+       "box": {
+        "x": 333.91,
+        "y": 84,
+        "w": 314.09,
+        "h": 24
+       },
+       "baseline": 101,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 120,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 132,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 149,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.pill",
+       "box": {
+        "x": 231.19,
+        "y": 132,
+        "w": 86.72,
+        "h": 24
+       },
+       "baseline": 149,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "span.dot",
+        "box": {
+         "x": 239.19,
+         "y": 140,
+         "w": 8,
+         "h": 8
+        }
+       }
+      },
+      {
+       "sig": "span.v",
+       "box": {
+        "x": 333.91,
+        "y": 132,
+        "w": 314.09,
+        "h": 24
+       },
+       "baseline": 149,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "li",
+     "sig": "li",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 168,
+      "w": 640,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "span.name",
+       "box": {
+        "x": 40,
+        "y": 180,
+        "w": 175.19,
+        "h": 24
+       },
+       "baseline": 197,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "span.pill",
+       "box": {
+        "x": 231.19,
+        "y": 180,
+        "w": 86.72,
+        "h": 24
+       },
+       "baseline": 197,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": {
+        "sig": "span.dot",
+        "box": {
+         "x": 239.19,
+         "y": 188,
+         "w": 8,
+         "h": 8
+        }
+       }
+      },
+      {
+       "sig": "span.v",
+       "box": {
+        "x": 333.91,
+        "y": 180,
+        "w": 314.09,
+        "h": 24
+       },
+       "baseline": 197,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}

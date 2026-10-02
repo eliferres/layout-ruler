@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: cards same ragged list</title>
+<style>
+body{margin:0;padding:24px;font:16px/24px Helvetica,Arial,sans-serif;color:#1f2430}
+.cards{display:grid;grid-template-columns:1fr;gap:24px;max-width:640px}
+.card{border:1px solid #ddd;border-radius:12px;padding:8px}
+ul{list-style:none;margin:0;padding:0}
+li{display:grid;grid-template-columns:auto 10px 1fr;column-gap:16px;padding:12px 16px}
+.dot{height:24px;background:radial-gradient(circle at 5px 12px,#c05a3c 5px,transparent 5.5px)}
+</style></head><body>
+<div class="cards"><div class="card"><ul>
+  <li><span>Ada</span><span class="dot"></span><span>Late</span></li>
+  <li><span>Second Customer Name</span><span class="dot"></span><span>Sent</span></li>
+  <li><span>Client C</span><span class="dot"></span><span>Paid</span></li>
+  <li><span>Client D</span><span class="dot"></span><span>Late</span></li>
+ </ul></div><div class="card"><ul>
+  <li><span>Ada</span><span class="dot"></span><span>Late</span></li>
+  <li><span>Second Customer Name</span><span class="dot"></span><span>Sent</span></li>
+  <li><span>Client C</span><span class="dot"></span><span>Paid</span></li>
+  <li><span>Client D</span><span class="dot"></span><span>Late</span></li>
+ </ul></div><div class="card"><ul>
+  <li><span>Ada</span><span class="dot"></span><span>Late</span></li>
+  <li><span>Second Customer Name</span><span class="dot"></span><span>Sent</span></li>
+  <li><span>Client C</span><span class="dot"></span><span>Paid</span></li>
+  <li><span>Client D</span><span class="dot"></span><span>Late</span></li>
+ </ul></div></div></body></html>

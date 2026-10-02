@@ -1,0 +1,853 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1280,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [
+  {
+   "path": "body > div.cards",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 24,
+      "w": 640,
+      "h": 174
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 41,
+        "y": 41,
+        "w": 606,
+        "h": 26
+       },
+       "baseline": 59,
+       "fs": 18,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.stats",
+       "box": {
+        "x": 41,
+        "y": 79,
+        "w": 606,
+        "h": 48
+       },
+       "baseline": 96,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      },
+      {
+       "sig": "div.foot",
+       "box": {
+        "x": 41,
+        "y": 139,
+        "w": 606,
+        "h": 42
+       },
+       "baseline": 165,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 222,
+      "w": 640,
+      "h": 174
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 41,
+        "y": 239,
+        "w": 606,
+        "h": 26
+       },
+       "baseline": 257,
+       "fs": 18,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.stats",
+       "box": {
+        "x": 41,
+        "y": 277,
+        "w": 606,
+        "h": 48
+       },
+       "baseline": 294,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      },
+      {
+       "sig": "div.foot",
+       "box": {
+        "x": 41,
+        "y": 337,
+        "w": 606,
+        "h": 42
+       },
+       "baseline": 363,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.card",
+     "run": 0,
+     "box": {
+      "x": 24,
+      "y": 420,
+      "w": 640,
+      "h": 174
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "h3",
+       "box": {
+        "x": 41,
+        "y": 437,
+        "w": 606,
+        "h": 26
+       },
+       "baseline": 455,
+       "fs": 18,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "div.stats",
+       "box": {
+        "x": 41,
+        "y": 475,
+        "w": 606,
+        "h": 48
+       },
+       "baseline": 492,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      },
+      {
+       "sig": "div.foot",
+       "box": {
+        "x": 41,
+        "y": 535,
+        "w": 606,
+        "h": 42
+       },
+       "baseline": 561,
+       "fs": 16,
+       "text": true,
+       "lines": 2,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.cards > div.card > div.stats",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 79,
+      "w": 191.33,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 41,
+        "y": 79,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 96,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 41,
+        "y": 103,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 119,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 248.33,
+      "y": 79,
+      "w": 191.34,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 248.33,
+        "y": 79,
+        "w": 191.34,
+        "h": 24
+       },
+       "baseline": 96,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 248.33,
+        "y": 103,
+        "w": 191.34,
+        "h": 24
+       },
+       "baseline": 119,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 455.67,
+      "y": 79,
+      "w": 191.33,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 455.67,
+        "y": 79,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 96,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 455.67,
+        "y": 103,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 119,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.card > div.foot > div.links",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 139,
+      "w": 65.14,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 41,
+        "y": 139,
+        "w": 65.14,
+        "h": 42
+       },
+       "baseline": 165,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 122.14,
+      "y": 139,
+      "w": 74.03,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 122.14,
+        "y": 139,
+        "w": 74.03,
+        "h": 42
+       },
+       "baseline": 165,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 212.17,
+      "y": 139,
+      "w": 66.91,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 212.17,
+        "y": 139,
+        "w": 66.91,
+        "h": 42
+       },
+       "baseline": 165,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.cards > div.card > div.stats",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 277,
+      "w": 191.33,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 41,
+        "y": 277,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 294,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 41,
+        "y": 301,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 317,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.low.stat",
+     "run": 0,
+     "box": {
+      "x": 248.33,
+      "y": 287,
+      "w": 191.34,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 248.33,
+        "y": 287,
+        "w": 191.34,
+        "h": 24
+       },
+       "baseline": 304,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 248.33,
+        "y": 311,
+        "w": 191.34,
+        "h": 24
+       },
+       "baseline": 327,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 455.67,
+      "y": 277,
+      "w": 191.33,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 455.67,
+        "y": 277,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 294,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 455.67,
+        "y": 301,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 317,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.card > div.foot > div.links",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 337,
+      "w": 65.14,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 41,
+        "y": 337,
+        "w": 65.14,
+        "h": 42
+       },
+       "baseline": 363,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 122.14,
+      "y": 337,
+      "w": 74.03,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 122.14,
+        "y": 337,
+        "w": 74.03,
+        "h": 42
+       },
+       "baseline": 363,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 212.17,
+      "y": 337,
+      "w": 66.91,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 212.17,
+        "y": 337,
+        "w": 66.91,
+        "h": 42
+       },
+       "baseline": 363,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.cards > div.card > div.stats",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 475,
+      "w": 191.33,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 41,
+        "y": 475,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 492,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 41,
+        "y": 499,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 515,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 248.33,
+      "y": 475,
+      "w": 191.34,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 248.33,
+        "y": 475,
+        "w": 191.34,
+        "h": 24
+       },
+       "baseline": 492,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 248.33,
+        "y": 499,
+        "w": 191.34,
+        "h": 24
+       },
+       "baseline": 515,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "div",
+     "sig": "div.stat",
+     "run": 0,
+     "box": {
+      "x": 455.67,
+      "y": 475,
+      "w": 191.33,
+      "h": 48
+     },
+     "border": 0,
+     "cells": [
+      {
+       "sig": "b",
+       "box": {
+        "x": 455.67,
+        "y": 475,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 492,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      },
+      {
+       "sig": "small",
+       "box": {
+        "x": 455.67,
+        "y": 499,
+        "w": 191.33,
+        "h": 24
+       },
+       "baseline": 515,
+       "fs": 13.33,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "path": "div.card > div.foot > div.links",
+   "vary": null,
+   "rows": [
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 41,
+      "y": 535,
+      "w": 65.14,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 41,
+        "y": 535,
+        "w": 65.14,
+        "h": 42
+       },
+       "baseline": 561,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 122.14,
+      "y": 535,
+      "w": 74.03,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 122.14,
+        "y": 535,
+        "w": 74.03,
+        "h": 42
+       },
+       "baseline": 561,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    },
+    {
+     "tag": "a",
+     "sig": "a",
+     "run": 0,
+     "box": {
+      "x": 212.17,
+      "y": 535,
+      "w": 66.91,
+      "h": 42
+     },
+     "border": 1,
+     "cells": [
+      {
+       "sig": "a",
+       "box": {
+        "x": 212.17,
+        "y": 535,
+        "w": 66.91,
+        "h": 42
+       },
+       "baseline": 561,
+       "fs": 16,
+       "text": true,
+       "lines": 1,
+       "mark": null
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "overflow": [],
+ "off": 0
+}
