@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layout-ruler"
+dynamic = ["version"]
+description = "Measure a rendered page's geometry in headless Chrome: edges, gaps, sizes, baselines, overflow"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Eli Ferres" }]
+
+[project.urls]
+Source = "https://github.com/eliferres/layout-ruler"
+Changelog = "https://github.com/eliferres/layout-ruler/blob/main/CHANGELOG.md"
+
+[project.scripts]
+layout-ruler = "layout_ruler.cli:main"
+
+[tool.setuptools]
+packages = ["layout_ruler"]
+
+[tool.setuptools.package-data]
+layout_ruler = ["probe.js"]
+
+[tool.setuptools.dynamic]
+version = { attr = "layout_ruler.__version__" }
