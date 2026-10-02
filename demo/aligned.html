@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler demo: aligned list</title>
+<!-- One shared grid template: every column lines up and every check passes. Every size is a whole pixel set in CSS, so no measured number depends on the platform font. -->
+<style>
+  body { margin: 0; padding: 24px; font: 16px/24px sans-serif; }
+  .list { list-style: none; margin: 0; padding: 0; width: 320px; display: flex; flex-direction: column; gap: 8px; }
+  .row { display: grid; grid-template-columns: 120px 8px 1fr 64px; column-gap: 16px; align-items: center; height: 48px; padding: 0 16px; }
+  .name, .status, .amount { height: 24px; overflow: hidden; }
+  .dot { width: 8px; height: 8px; border-radius: 4px; background: #c05a3c; }
+  .amount { text-align: right; }
+</style>
+</head>
+<body>
+  <ul class="list">
+    <li class="row"><span class="name">Ada</span><span class="dot"></span><span class="status">Late</span><span class="amount">$120</span></li>
+    <li class="row"><span class="name">Bruno</span><span class="dot"></span><span class="status">Sent</span><span class="amount">$1,240</span></li>
+    <li class="row"><span class="name">Chen</span><span class="dot"></span><span class="status">Paid</span><span class="amount">$80</span></li>
+    <li class="row"><span class="name">Dana</span><span class="dot"></span><span class="status">Late</span><span class="amount">$460</span></li>
+    <li class="row"><span class="name">Eve</span><span class="dot"></span><span class="status">Sent</span><span class="amount">$95</span></li>
+  </ul>
+</body>
+</html>
