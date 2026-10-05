@@ -14,4 +14,5 @@ All notable changes to this project are documented in this file. The format is b
 - The `viewport` rule, and `screen-height` with `--screen`: nothing runs off the screen at any width checked.
 - `data-ruler` attributes to declare a designed exception in the page, each listed in the output as an allow.
 - `--json` output with every row, and `--probe-json` / `--dump-probe` to judge measurements recorded by any driver.
+- Measurement waits for the page to settle: fonts, stylesheets, finite animations, content added while it is scrolled through, and images that start loading on the way.
 - Exit codes 0 for no findings, 1 for findings and 2 for a page that could not be measured, including one whose stylesheet did not load.

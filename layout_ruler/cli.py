@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 from . import __version__
-from .chrome import CHROME_ENV, SETTLE_CAP_MS, Chrome, MeasureError, find_chrome, measure
+from .chrome import CHROME_ENV, IMAGES_WAIT_MS, SETTLE_CAP_MS, Chrome, MeasureError, find_chrome, measure
 from .judge import Allow, Scale, check_probe, judge_viewport
 
 PROG = "layout-ruler"
@@ -143,6 +143,8 @@ def judge(probes: List[Dict[str, Any]], scale: Scale, screen: bool,
         if asked and d["viewport"]["w"] != asked[n][0]:
             notes.append(f"laid out {d['viewport']['w']}px wide (the page has no viewport meta tag)")
         wait = d.get("settle") or {}
+        if wait.get("loading"):
+            notes.append(f"{wait['loading']} image(s) still loading after {IMAGES_WAIT_MS // 1000} s; measured anyway")
         if wait.get("gaveUp"):
             notes.append(f"still animating after {SETTLE_CAP_MS // 1000} s "
                          f"({wait.get('running', 0)} animation(s)); measured anyway")

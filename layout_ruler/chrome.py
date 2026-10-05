@@ -216,9 +216,30 @@ SETTLE_JS = """new Promise((done) => {
   frames(check);
 })""" % (SETTLE_CAP_MS, SETTLE_MS, SETTLE_MS)
 
-# Lazy content: scroll the page through once, then back to the top.
-SWEEP_JS = ("new Promise(r=>{let y=0;const h=document.documentElement.scrollHeight;const t=setInterval(()=>{"
-            "y+=700;scrollTo(0,y);if(y>=h||y>12000){clearInterval(t);scrollTo(0,0);setTimeout(r,500);}},50);})")
+# Lazy content: scroll down in 700px steps, re-reading the page height at
+# every step so content a script adds near the bottom is scrolled through
+# too, down to SWEEP_CAP_PX. Then back to the top, and wait (up to
+# IMAGES_WAIT_MS) for every image still loading, which includes each lazy
+# image the scroll set off. Resolves to {loading}: images still unfinished
+# when the wait gave up.
+SWEEP_CAP_PX, IMAGES_WAIT_MS = 12000, 5000
+SWEEP_JS = """new Promise((done) => {
+  let y = 0;
+  const step = () => {
+    y += 700;
+    scrollTo(0, y);
+    if (y < document.documentElement.scrollHeight && y < %d) return setTimeout(step, 50);
+    scrollTo(0, 0);
+    const pending = [...document.images].filter((i) => !i.complete);
+    const loaded = pending.map((i) => new Promise((r) => {
+      i.addEventListener('load', r, { once: true });
+      i.addEventListener('error', r, { once: true });
+    }));
+    Promise.race([Promise.all(loaded), new Promise((r) => setTimeout(r, %d))])
+      .then(() => setTimeout(() => done({ loading: [...document.images].filter((i) => !i.complete).length }), 300));
+  };
+  step();
+})""" % (SWEEP_CAP_PX, IMAGES_WAIT_MS)
 
 # A page read before its stylesheets arrive is measured as browser defaults
 # (body margin 8px, h1 32px), numbers from a render nobody ships. So every
@@ -414,11 +435,11 @@ def measure_once(ch: Chrome, url: str, width: int, height: int, probe_src: str, 
             raise MeasureError(f"{url}: no load event in 40 s")
         check_styles(ch, s)  # before the sweep and the wait, so both run on the styled page
         evaluate(ch, s, "document.fonts.ready.then(() => true)")
-        evaluate(ch, s, SWEEP_JS, timeout=60)
+        sweep = evaluate(ch, s, SWEEP_JS, timeout=60)
         settle = evaluate(ch, s, SETTLE_JS, timeout=SETTLE_CAP_MS / 1000 + 15)
         check_styles(ch, s)  # again at the read: a sheet the page swapped in late, or took away
         d = evaluate(ch, s, probe_src, timeout=60)
-        d["settle"] = settle
+        d["settle"] = dict(settle, loading=sweep["loading"])
         return d
     finally:
         ch.close_page(s)

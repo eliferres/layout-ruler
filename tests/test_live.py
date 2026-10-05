@@ -3,11 +3,16 @@ command reports at both default widths. Skipped, with the reason, when no
 Chrome or Chromium binary is found (see find_chrome for the lookup order)."""
 from __future__ import annotations
 
+import http.server
 import json
+import struct
 import subprocess
 import sys
 import tempfile
+import threading
+import time
 import unittest
+import zlib
 from pathlib import Path
 
 from layout_ruler.chrome import find_chrome
@@ -66,6 +71,63 @@ class TestLive(unittest.TestCase):
         a = json.loads(ruler(url, "--json", "--viewport", "1280x900").stdout)
         b = json.loads(ruler("demo/aligned.html", "--json", "--viewport", "1280x900").stdout)
         self.assertEqual(a["viewports"], b["viewports"])
+
+
+def png(width: int, height: int) -> bytes:
+    """A blank greyscale PNG, built by hand so the test needs no image file."""
+    def chunk(kind: bytes, data: bytes) -> bytes:
+        return struct.pack(">I", len(data)) + kind + data + struct.pack(">I", zlib.crc32(kind + data))
+    raw = b"".join(b"\0" + b"\xff" * width for _ in range(height))
+    return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 0, 0, 0, 0))
+            + chunk(b"IDAT", zlib.compress(raw)) + chunk(b"IEND", b""))
+
+
+# Content arrives only after the page is scrolled to its first bottom edge:
+# a script then adds 3000px more page and, at its end, a lazy image the server
+# sends two seconds late. Once loaded the image is 1600px wide and runs off
+# the screen, so a sweep that stops at the first page height, or does not wait
+# for the image, reports a clean page.
+LATE_PAGE = b"""<!doctype html><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0} .tall{height:2000px} .more{height:3000px}</style>
+<div class="tall"></div>
+<script>
+let added = false;
+addEventListener('scroll', () => {
+  if (added || scrollY + innerHeight < document.documentElement.scrollHeight - 10) return;
+  added = true;
+  document.body.insertAdjacentHTML('beforeend', '<div class="more"></div><img loading="lazy" src="/wide.png">');
+});
+</script>"""
+
+
+class LateServer(http.server.BaseHTTPRequestHandler):
+    def do_GET(self) -> None:
+        if self.path == "/wide.png":
+            time.sleep(2)
+            body, kind = png(1600, 8), "image/png"
+        else:
+            body, kind = LATE_PAGE, "text/html"
+        self.send_response(200)
+        self.send_header("Content-Type", kind)
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def log_message(self, *args: object) -> None:
+        pass
+
+
+@unittest.skipUnless(CHROME, "no Chrome or Chromium found; pass --chrome or set LAYOUT_RULER_CHROME to run the live tests")
+class TestLazyContent(unittest.TestCase):
+    def test_content_added_while_sweeping_and_slow_images_are_measured(self) -> None:
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), LateServer)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            p = ruler(f"http://127.0.0.1:{server.server_address[1]}/", "--viewport", "1280x900")
+        finally:
+            server.shutdown()
+        self.assertEqual(p.returncode, 1, p.stdout + p.stderr)
+        self.assertIn("scrollWidth 1600 vs 1280", p.stdout)
 
 
 if __name__ == "__main__":
