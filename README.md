@@ -110,6 +110,7 @@ The story it was built on: a five-row list where each row was its own CSS grid w
 - Sets are found by heuristics, and some shapes are deliberately not judged: a list built of plain `p` elements reads as prose, the dot, label and count inside an inline pill are not a set of their own, and words in running text are never a set. A layout the heuristics misread can be fenced off with `data-ruler="off"`.
 - Shadow DOM and iframes are not entered.
 - Overflow is checked horizontally only, unless `--screen` asks for the vertical check.
+- Only overflow on the side a page scrolls to is reported: the right in a left-to-right page, the left in a right-to-left one. Anything off the other edge is ignored, which keeps a skip link parked at `left: -9999px` quiet, but also means content pushed off the left by a negative margin is not reported, though nobody can scroll to it.
 - Chrome runs with its scrollbars hidden, so the page is laid out as on a phone or a Mac with overlay scrollbars. On a platform whose scrollbars always take space (Windows, Linux by default), an element sized `100vw` is wider than the room left beside the scrollbar and scrolls sideways; the ruler does not see that overflow.
 - The tolerance is fixed at 1px, and only the first line of each text cell is read for its baseline.
 - Measurements follow the fonts on the machine that renders. The recorded test probes were captured on macOS, which is why the unit tests judge recordings and only the font-independent demo pages are rendered live.
