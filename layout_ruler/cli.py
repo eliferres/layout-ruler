@@ -16,7 +16,7 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 from . import __version__
 from .chrome import CHROME_ENV, SETTLE_CAP_MS, Chrome, MeasureError, find_chrome, measure
-from .judge import Allow, Scale, judge_viewport
+from .judge import Allow, Scale, check_probe, judge_viewport
 
 PROG = "layout-ruler"
 DEFAULT_VIEWPORTS = [(1280, 900), (375, 812)]
@@ -119,9 +119,14 @@ def load_probes(paths: Sequence[str]) -> List[Dict[str, Any]]:
     for p in paths:
         try:
             with open(p, encoding="utf-8") as f:
-                probes.append(json.load(f))
+                d = json.load(f)
         except (OSError, ValueError) as e:
             raise UsageError(f"unreadable probe {p}: {e}") from None
+        try:
+            check_probe(d)
+        except ValueError as e:
+            raise UsageError(f"malformed probe {p}: {e}") from None
+        probes.append(d)
     return probes
 
 
@@ -131,12 +136,7 @@ def judge(probes: List[Dict[str, Any]], scale: Scale, screen: bool,
     --json prints and the text report is drawn from."""
     viewports, allow_sets, findings = [], [], 0
     for n, d in enumerate(probes):
-        try:
-            rows, allows, sets, skipped = judge_viewport(d, scale, screen)
-        except (KeyError, TypeError) as e:
-            raise UsageError(f"probe is missing a field the judge reads: {e}") from None
-        except IndexError:
-            raise UsageError("probe is malformed: a set with no rows or a row with no cells") from None
+        rows, allows, sets, skipped = judge_viewport(d, scale, screen)
         laid = f"{d['viewport']['w']}x{d['viewport']['h']}"
         name = f"{asked[n][0]}x{asked[n][1]}" if asked else laid
         notes = []

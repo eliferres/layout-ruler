@@ -109,26 +109,31 @@ class TestErrors(unittest.TestCase):
         self.assertTrue(p.stderr.startswith("layout-ruler: unreadable probe README.md: "))
         self.assertEqual(len(p.stderr.strip().splitlines()), 1)
 
-    def test_a_probe_missing_a_field(self) -> None:
-        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
-            json.dump({"sets": []}, f)
-        try:
-            self.assert_error(ruler("--probe-json", f.name),
-                              "layout-ruler: probe is missing a field the judge reads: 'viewport'")
-        finally:
-            os.unlink(f.name)
+    def test_a_malformed_probe_is_one_line_naming_the_bad_field(self) -> None:
+        good = json.loads((ROOT / FIX / "aligned-list.json").read_text())
 
-    def test_a_probe_with_an_empty_set(self) -> None:
-        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
-            json.dump({"viewport": {"w": 1280, "h": 900}, "scrollWidth": 1280, "scrollHeight": 900,
-                       "sets": [{"path": "ul", "rows": []}], "overflow": []}, f)
-        try:
-            p = ruler("--probe-json", f.name)
-            self.assertEqual(p.returncode, 2)
-            self.assertNotIn("Traceback", p.stderr)
-            self.assertTrue(p.stderr.startswith("layout-ruler: probe is malformed: "))
-        finally:
-            os.unlink(f.name)
+        def broken(edit: object) -> object:
+            d = json.loads(json.dumps(good))
+            edit(d)
+            return d
+
+        cases = {
+            "top level": ([], "the probe is not an object"),
+            "null": (None, "the probe is not an object"),
+            "no viewport": ({"sets": []}, "viewport is missing"),
+            "empty set": (broken(lambda d: d["sets"][0].update(rows=[])), "sets[0].rows is empty"),
+            "string cell": (broken(lambda d: d["sets"][0]["rows"][0]["cells"].__setitem__(0, "x")),
+                            "sets[0].rows[0].cells[0] is not an object"),
+            "string coordinate": (broken(lambda d: d["sets"][0]["rows"][0]["box"].update(x="a")),
+                                  "sets[0].rows[0].box.x is not a number"),
+            "null set": (broken(lambda d: d.update(sets=[None])), "sets[0] is not an object"),
+            "string overflow": (broken(lambda d: d.update(overflow=["x"])), "overflow[0] is not an object"),
+        }
+        for name, (probe, why) in cases.items():
+            with self.subTest(case=name), tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / "probe.json"
+                path.write_text(json.dumps(probe))
+                self.assert_error(ruler("--probe-json", str(path)), f"layout-ruler: malformed probe {path}: {why}")
 
     def test_a_chrome_path_that_does_not_exist(self) -> None:
         self.assert_error(ruler(f"{FIX}/aligned-list.html", "--chrome", "/nonexistent/chrome"),

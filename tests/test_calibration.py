@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import unittest
 
+from layout_ruler.judge import check_probe
 from support import FIXTURES, failing, probe
 
 # name -> the rules that must FAIL (all of them, and no other)
@@ -120,6 +121,11 @@ class TestCalibration(unittest.TestCase):
     def test_every_recorded_probe_is_in_the_table(self) -> None:
         recorded = {p.stem for p in FIXTURES.glob("*.json")}
         self.assertEqual(recorded, set(EXPECTED))
+
+    def test_every_recorded_probe_has_the_shape_the_judge_reads(self) -> None:
+        for name in EXPECTED:
+            with self.subTest(fixture=name):
+                check_probe(probe(name))
 
     def test_every_probe_has_its_page(self) -> None:
         for name in EXPECTED:

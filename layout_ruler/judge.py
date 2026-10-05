@@ -371,6 +371,71 @@ def judge_set(st: Dict[str, Any], scale: Scale) -> Tuple[List[Row], List[Allow],
     return out, allows, True, skipped
 
 
+def check_probe(d: Any) -> None:
+    """Raise ValueError naming the first field a recorded probe gets wrong.
+
+    The judge trusts the shape the probe returns; a file from another driver
+    or an edited recording is checked here first, so a bad one is reported
+    by its path in the JSON instead of failing somewhere inside a rule."""
+    def number(v: Any, where: str, optional: bool = False) -> None:
+        if v is None and optional:
+            return
+        if isinstance(v, bool) or not isinstance(v, (int, float)):
+            raise ValueError(f"{where} is not a number")
+
+    def obj(v: Any, where: str) -> Dict[str, Any]:
+        if not isinstance(v, dict):
+            raise ValueError(f"{where} is not an object")
+        return v
+
+    def items(v: Any, where: str, nonempty: bool = False) -> List[Any]:
+        if not isinstance(v, list):
+            raise ValueError(f"{where} is not a list")
+        if nonempty and not v:
+            raise ValueError(f"{where} is empty")
+        return v
+
+    def field(o: Dict[str, Any], key: str, where: str) -> Any:
+        if key not in o:
+            raise ValueError(f"{where}{key} is missing")
+        return o[key]
+
+    def box(o: Dict[str, Any], where: str) -> None:
+        b = obj(field(o, "box", where + "."), where + ".box")
+        for k in ("x", "y", "w", "h"):
+            number(field(b, k, where + ".box."), f"{where}.box.{k}")
+
+    def text(o: Dict[str, Any], key: str, where: str) -> None:
+        if not isinstance(field(o, key, where + "."), str):
+            raise ValueError(f"{where}.{key} is not text")
+
+    if not isinstance(d, dict):
+        raise ValueError("the probe is not an object")
+    vp = obj(field(d, "viewport", ""), "viewport")
+    for k in ("w", "h"):
+        number(field(vp, k, "viewport."), f"viewport.{k}")
+    for k in ("scrollWidth", "scrollHeight"):
+        number(field(d, k, ""), k)
+    for i, st in enumerate(items(d.get("sets") or [], "sets")):
+        sw = f"sets[{i}]"
+        text(obj(st, sw), "path", sw)
+        for j, r in enumerate(items(field(st, "rows", sw + "."), sw + ".rows", nonempty=True)):
+            rw = f"{sw}.rows[{j}]"
+            box(obj(r, rw), rw)
+            for k, c in enumerate(items(field(r, "cells", rw + "."), rw + ".cells", nonempty=True)):
+                cw = f"{rw}.cells[{k}]"
+                text(obj(c, cw), "sig", cw)
+                box(c, cw)
+                for key in ("baseline", "fs", "lines"):
+                    number(c.get(key), f"{cw}.{key}", optional=True)
+                if c.get("mark") is not None:
+                    text(obj(c["mark"], cw + ".mark"), "sig", cw + ".mark")
+                    box(c["mark"], cw + ".mark")
+    for i, o in enumerate(items(d.get("overflow") or [], "overflow")):
+        text(obj(o, f"overflow[{i}]"), "path", f"overflow[{i}]")
+        box(o, f"overflow[{i}]")
+
+
 def judge_viewport(d: Dict[str, Any], scale: Scale, screen: bool = False) -> Tuple[List[Row], List[Allow], int, int]:
     """One probe -> (table rows, allows, sets judged, rows skipped)."""
     table: List[Row] = []
