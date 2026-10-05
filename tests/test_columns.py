@@ -87,7 +87,7 @@ class TestColumns(unittest.TestCase):
 
     def test_word_lines_are_judged_on_the_edge_their_text_align_names(self) -> None:
         row = find(rows("centred-heading-off"), "columns", "FAIL")
-        self.assertIn("judged on centre lines (text-align center); centre lines 639.99,645.99,640; row 2 off 640px",
+        self.assertIn("judged on centre lines (text-align center); centre lines 640,645.99,640; row 2 off 640px",
                       row["measurement"])
         self.assertEqual(failing("centred-heading-375"), [])
 
