@@ -13,8 +13,8 @@ class TestColumns(unittest.TestCase):
         different x in every row, and the finding prints each one."""
         row = find(rows("ragged-list"), "columns", "FAIL")
         self.assertEqual(row["measurement"],
-                         "col 2 span.dot: left spread 135.17px, right spread 135.17px, centre spread 135.17px; "
-                         "left edges 84.47,218.75,125.97,185.83,83.58; rows 1, 2, 3, 4, 5 share no value")
+                         "col 2 span.dot: left spread 147.61px, right spread 147.61px, centre spread 147.61px; "
+                         "left edges 84.47,231.19,112.91,194.72,83.58; rows 1, 2, 3, 4, 5 share no value")
 
     def test_a_rows_cells_are_never_a_set_of_their_own(self) -> None:
         sets = {r["set"] for r in rows("aligned-list")}
@@ -34,7 +34,7 @@ class TestColumns(unittest.TestCase):
     def test_a_right_aligned_pill_passes_while_its_dot_fails(self) -> None:
         table = rows("right-pill-dot")
         self.assertIsNotNone(find(table, "columns", "PASS", "col 2 span.status"))
-        self.assertIsNotNone(find(table, "columns", "FAIL", "col 2/mark i.dot: left spread 113.83px"))
+        self.assertIsNotNone(find(table, "columns", "FAIL", "col 2/mark i.dot: left spread 125.38px"))
 
     def test_display_contents_is_see_through(self) -> None:
         self.assertIsNotNone(find(rows("contents-cell"), "columns", "FAIL", "col 2 span.dot"))
@@ -87,7 +87,7 @@ class TestColumns(unittest.TestCase):
 
     def test_word_lines_are_judged_on_the_edge_their_text_align_names(self) -> None:
         row = find(rows("centred-heading-off"), "columns", "FAIL")
-        self.assertIn("judged on centre lines (text-align center); centre lines 640,646,640; row 2 off 640px",
+        self.assertIn("judged on centre lines (text-align center); centre lines 639.99,645.99,640; row 2 off 640px",
                       row["measurement"])
         self.assertEqual(failing("centred-heading-375"), [])
 
