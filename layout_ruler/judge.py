@@ -443,8 +443,9 @@ def check_probe(d: Any) -> None:
         raise ValueError("off is not a whole number of 0 or more")
     if d.get("reach") is not None:
         reach = obj(d["reach"], "reach")
-        for k in ("right", "bottom"):
-            number(reach.get(k), f"reach.{k}", optional=True)
+        for k in ("right", "bottom"):  # the probe omits an edge rather than send null, and the judge tests `in`
+            if k in reach:
+                number(reach[k], f"reach.{k}")
 
 
 def judge_viewport(d: Dict[str, Any], scale: Scale, screen: bool = False) -> Tuple[List[Row], List[Allow], int, int]:

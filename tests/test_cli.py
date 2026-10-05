@@ -133,6 +133,7 @@ class TestErrors(unittest.TestCase):
                               "sets[0].rows[0].border is not a number"),
             "string reach": (broken(lambda d: d.update(reach="x")), "reach is not an object"),
             "string reach edge": (broken(lambda d: d.update(reach={"right": "x"})), "reach.right is not a number"),
+            "null reach edge": (broken(lambda d: d.update(reach={"bottom": None})), "reach.bottom is not a number"),
             "NaN coordinate": (broken(lambda d: d["sets"][0]["rows"][1]["cells"][0]["box"].update(y=float("nan"))),
                                "sets[0].rows[1].cells[0].box.y is not finite"),
             "infinite scroll width": (broken(lambda d: d.update(scrollWidth=float("inf"))), "scrollWidth is not finite"),
