@@ -20,6 +20,14 @@ class TestViewport(unittest.TestCase):
         self.assertEqual(find(rows("overflow"), "viewport", "FAIL")["measurement"],
                          "scrollWidth 1424 vs 1280; 1 box(es) outside: body > div.wide x 24..1424")
 
+    def test_a_box_parked_off_the_start_edge_is_not_overflow(self) -> None:
+        """A skip link at left: -9999px never scrolls the page sideways; in a
+        right-to-left page the start edge is the right one, and overflow off
+        the left does scroll."""
+        self.assertEqual(failing("skip-link-off-left"), [])
+        self.assertEqual(find(rows("rtl-overflow-left"), "viewport", "FAIL")["measurement"],
+                         "scrollWidth 1424 vs 1280; 1 box(es) outside: body > div.wide x -144..1256")
+
     def test_one_pixel_of_rounding_is_forgiven_only_when_no_box_reaches_past(self) -> None:
         """A page with no viewport meta lays out at 980px on a phone and
         reports 981 while its widest box ends at 980."""

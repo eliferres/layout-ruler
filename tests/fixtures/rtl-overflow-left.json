@@ -1,0 +1,22 @@
+{
+ "viewport": {
+  "w": 1280,
+  "h": 900
+ },
+ "scrollWidth": 1424,
+ "scrollHeight": 900,
+ "screen": false,
+ "sets": [],
+ "overflow": [
+  {
+   "path": "body > div.wide",
+   "box": {
+    "x": -144,
+    "y": 24,
+    "w": 1400,
+    "h": 48
+   }
+  }
+ ],
+ "off": 0
+}

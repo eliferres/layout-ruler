@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout-ruler fixture: skip link off left</title>
+<style>
+  body { margin: 0; padding: 24px; font: 16px/24px Helvetica, Arial, sans-serif; }
+  .skip { position: absolute; left: -9999px; top: 0; width: 120px; }
+  .skip:focus { left: 0; }
+  p { margin: 0; width: 320px; }
+</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <p id="main">A page whose only off-screen box is a skip link parked far to the left, which never makes the page scroll sideways.</p>
+</body>
+</html>

@@ -109,6 +109,8 @@ EXPECTED = {
     "two-line-hero": [],
     "one-line-hero": [],
     "inline-nav-links": ["columns", "gaps"],
+    "skip-link-off-left": [],
+    "rtl-overflow-left": ["viewport"],
 }
 
 

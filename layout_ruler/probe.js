@@ -353,6 +353,10 @@
     if (!found) break;
     roots.add(k[0]);
   }
+  // Only overflow on the page's inline-end side can be scrolled to: a box
+  // parked off the start edge (a skip link at left: -9999px) never makes the
+  // page scroll sideways, so it is not reported. The root's direction decides.
+  const rtl = getComputedStyle(root).direction === 'rtl';
   const sets = [], overflow = [];
   let right = 0, bottom = 0;  // the furthest right and bottom edge of any visible, unclipped box
   const walk = (el, clipped, reported, inCell) => {
@@ -360,7 +364,7 @@
       const b = boxOf(el);
       right = Math.max(right, b.x + b.w);
       bottom = Math.max(bottom, b.y + b.h);
-      if (!reported && (b.x + b.w > vw + 1 || b.x < -1)) { overflow.push({ path: path(el), box: b }); reported = true; }
+      if (!reported && (rtl ? b.x < -1 : b.x + b.w > vw + 1)) { overflow.push({ path: path(el), box: b }); reported = true; }
     }
     if (tag(el) === 'svg') return;
     const clipsBelow = clipped || CLIPS.has(getComputedStyle(el).overflowX);
