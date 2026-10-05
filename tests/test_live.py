@@ -101,6 +101,11 @@ class TestLive(unittest.TestCase):
         page = [r for r in json.loads(p.stdout)["viewports"][0]["rows"] if r["rule"] == "viewport"]
         self.assertEqual([(r["measurement"], r["verdict"]) for r in page],
                          [("scrollWidth 1280 vs 1280; 0 box(es) outside", "PASS")])
+        # With dir="rtl" on body alone the page scrolls to the left, so a box
+        # off the left edge is the overflow.
+        p = ruler("tests/fixtures/body-rtl-overflow-left.html", "--viewport", "1280x900")
+        self.assertEqual(p.returncode, 1, p.stdout + p.stderr)
+        self.assertIn("1 box(es) outside: body > div.wide x -144..1256", p.stdout)
 
     def test_a_file_url_and_a_path_measure_the_same(self) -> None:
         url = (ROOT / "demo" / "aligned.html").as_uri()

@@ -355,8 +355,10 @@
   }
   // Only overflow on the page's inline-end side can be scrolled to: a box
   // parked off the start edge (a skip link at left: -9999px) never makes the
-  // page scroll sideways, so it is not reported. The root's direction decides.
-  const rtl = getComputedStyle(root).direction === 'rtl';
+  // page scroll sideways, so it is not reported. The page's direction is
+  // body's, which inherits the root's unless body sets its own (CSS Writing
+  // Modes: body is read before the root element).
+  const rtl = getComputedStyle(document.body).direction === 'rtl';
   const sets = [], overflow = [];
   let right = 0, bottom = 0;  // the furthest right and bottom edge of any visible, unclipped box
   const walk = (el, clipped, reported, inCell) => {

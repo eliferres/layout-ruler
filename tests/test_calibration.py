@@ -111,6 +111,7 @@ EXPECTED = {
     "inline-nav-links": ["columns", "gaps"],
     "skip-link-off-left": [],
     "rtl-overflow-left": ["viewport"],
+    "body-rtl-overflow-left": ["viewport"],
 }
 
 

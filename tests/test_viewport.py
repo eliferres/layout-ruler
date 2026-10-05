@@ -27,6 +27,9 @@ class TestViewport(unittest.TestCase):
         self.assertEqual(failing("skip-link-off-left"), [])
         self.assertEqual(find(rows("rtl-overflow-left"), "viewport", "FAIL")["measurement"],
                          "scrollWidth 1424 vs 1280; 1 box(es) outside: body > div.wide x -144..1256")
+        # dir="rtl" on body alone sets the page's direction too.
+        self.assertEqual(find(rows("body-rtl-overflow-left"), "viewport", "FAIL")["measurement"],
+                         "scrollWidth 1424 vs 1280; 1 box(es) outside: body > div.wide x -144..1256")
 
     def test_one_pixel_of_rounding_is_forgiven_only_when_no_box_reaches_past(self) -> None:
         """A page with no viewport meta lays out at 980px on a phone and

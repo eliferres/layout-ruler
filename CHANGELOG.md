@@ -11,7 +11,7 @@ All notable changes to this project are documented in this file. The format is b
 - The `gaps` and `gap-scale` rules: neighbouring rows sit an equal distance apart, on a 4px grid or the scale given with `--grid` or `--scale`.
 - The `equal-size` rule: stacked rows share a height and side-by-side rows a width, skipped with the reason where a row wraps.
 - The `baselines` rule: text cells on one line of a row share its baseline, with the offset of each cell that does not.
-- The `viewport` rule, and `screen-height` with `--screen`: nothing runs off the screen at any width checked.
+- The `viewport` rule, and `screen-height` with `--screen`: nothing runs off the screen at any width checked. Overflow is read on the side the page scrolls to, by the direction set on `body` or the root element, so a skip link parked off the start edge is not a finding.
 - `data-ruler` attributes to declare a designed exception in the page, each listed in the output as an allow.
 - `--json` output with every row, and `--probe-json` / `--dump-probe` to judge measurements recorded by any driver. A recorded probe is checked field by field before it is judged, numbers must be finite, and a probe the judge still cannot read is exit 2 in one line.
 - Measurement waits for the page to settle: fonts, stylesheets, finite animations, content added while it is scrolled through, and images that start loading on the way. JavaScript dialogs are dismissed as they open.
