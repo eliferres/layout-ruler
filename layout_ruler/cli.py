@@ -9,6 +9,7 @@ import argparse
 import json
 import os
 import re
+import signal
 import sys
 import urllib.parse
 from pathlib import Path
@@ -208,13 +209,24 @@ def run(args: argparse.Namespace) -> int:
     return 1 if result["findings"] else 0
 
 
+def stop(signum: int, frame: Any) -> None:
+    """SIGTERM unwinds like an exit, so Chrome and its profile are cleaned up."""
+    raise SystemExit(128 + signum)
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = build_parser().parse_args(argv)
+    before = signal.signal(signal.SIGTERM, stop)
     try:
         return run(args)
+    except KeyboardInterrupt:
+        print(f"{PROG}: interrupted", file=sys.stderr)
+        return 130
     except (UsageError, MeasureError) as e:
         print(f"{PROG}: {e}", file=sys.stderr)
         return 2
     except OSError as e:
         print(f"{PROG}: {e.strerror or e}: {e.filename or ''}".rstrip(": "), file=sys.stderr)
         return 2
+    finally:
+        signal.signal(signal.SIGTERM, before)

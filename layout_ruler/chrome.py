@@ -77,14 +77,22 @@ class Chrome:
             os.set_inheritable(4, True)
 
         self.errlog = os.path.join(self.profile, "chrome-stderr.log")
-        with open(self.errlog, "ab") as err:
-            self.p = subprocess.Popen(args, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=err,
-                                      close_fds=False, preexec_fn=wire)
+        try:
+            with open(self.errlog, "ab") as err:
+                self.p = subprocess.Popen(args, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=err,
+                                          close_fds=False, preexec_fn=wire)
+        except OSError as e:  # not a program at all: nothing started, so nothing may be left behind
+            for fd in (r_in, w_in, r_out, w_out):
+                os.close(fd)
+            shutil.rmtree(self.profile, ignore_errors=True)
+            raise MeasureError(f"could not start {exe}: {e.strerror or e}") from None
         os.close(r_in)
         os.close(w_out)
         self.w = os.fdopen(w_in, "wb", buffering=0)
         self.r = os.fdopen(r_out, "rb", buffering=0)
         self.id = 0
+        self.write_lock = threading.Lock()  # the reader thread writes too, to dismiss dialogs
+        self.unanswered: Set[int] = set()   # commands sent without waiting; their replies are dropped
         self.pending: Dict[int, Dict[str, Any]] = {}
         self.events: List[Dict[str, Any]] = []
         self.lock = threading.Lock()
@@ -111,23 +119,40 @@ class Chrome:
                     m = json.loads(msg)
                 except ValueError:
                     continue
+                # A JavaScript dialog (alert, confirm, prompt, beforeunload)
+                # halts the page until answered, so it is dismissed at once.
+                # Sent from this thread without waiting, since this thread is
+                # the one that would read the reply.
+                if m.get("method") == "Page.javascriptDialogOpening":
+                    try:
+                        self.unanswered.add(self.post("Page.handleJavaScriptDialog", {"accept": False}, m.get("sessionId")))
+                    except OSError:
+                        pass  # Chrome is gone; the main thread will find out
                 with self.cv:
-                    if "id" in m:
+                    if m.get("id") in self.unanswered:
+                        self.unanswered.discard(m["id"])
+                    elif "id" in m:
                         self.pending[m["id"]] = m
                     else:
                         self.events.append(m)
                     self.cv.notify_all()
 
-    def send(self, method: str, params: Optional[Dict[str, Any]] = None, session: Optional[str] = None,
-             timeout: float = 45) -> Dict[str, Any]:
+    def post(self, method: str, params: Optional[Dict[str, Any]] = None, session: Optional[str] = None) -> int:
+        """Write one command and return its id without waiting for the reply."""
         with self.lock:
             self.id += 1
             mid = self.id
         m: Dict[str, Any] = {"id": mid, "method": method, "params": params or {}}
         if session:
             m["sessionId"] = session
-        try:
+        with self.write_lock:
             self.w.write(json.dumps(m).encode() + b"\0")
+        return mid
+
+    def send(self, method: str, params: Optional[Dict[str, Any]] = None, session: Optional[str] = None,
+             timeout: float = 45) -> Dict[str, Any]:
+        try:
+            mid = self.post(method, params, session)
         except OSError:
             raise MeasureError("Chrome exited: " + self._stderr_tail()) from None
         end = time.time() + timeout

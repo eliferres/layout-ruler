@@ -139,6 +139,20 @@ class TestErrors(unittest.TestCase):
         self.assert_error(ruler(f"{FIX}/aligned-list.html", "--chrome", "/nonexistent/chrome"),
                           "layout-ruler: Chrome not found at /nonexistent/chrome")
 
+    def test_a_chrome_path_that_is_not_a_program_leaves_no_profile_behind(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            fake = Path(tmp) / "chrome"
+            fake.write_bytes(b"\x00\x01 not a program")
+            fake.chmod(0o755)
+            scratch = Path(tmp) / "tmp"
+            scratch.mkdir()
+            env = dict(os.environ, TMPDIR=str(scratch))
+            p = ruler(f"{FIX}/aligned-list.html", "--chrome", str(fake), env=env)
+            self.assertEqual(p.returncode, 2)
+            self.assertTrue(p.stderr.startswith(f"layout-ruler: could not start {fake}: "), p.stderr)
+            self.assertEqual(len(p.stderr.strip().splitlines()), 1)
+            self.assertEqual(list(scratch.iterdir()), [])
+
     def test_no_chrome_anywhere(self) -> None:
         err = io.StringIO()
         with mock.patch.object(cli, "find_chrome", return_value=None), mock.patch.dict(os.environ, {"LAYOUT_RULER_CHROME": ""}), \

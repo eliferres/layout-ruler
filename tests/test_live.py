@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import http.server
 import json
+import os
+import signal
 import struct
 import subprocess
 import sys
@@ -65,6 +67,30 @@ class TestLive(unittest.TestCase):
         self.assertIn("stylesheet not loaded after one reload with the cache off", p.stderr)
         self.assertIn("missing.css", p.stderr)
         self.assertEqual(len(p.stderr.strip().splitlines()), 1)
+
+    def test_a_page_that_calls_alert_is_measured(self) -> None:
+        """JavaScript dialogs are dismissed as they open; otherwise the page
+        never fires its load event."""
+        with tempfile.TemporaryDirectory() as tmp:
+            page = Path(tmp) / "alert.html"
+            page.write_text("<!doctype html><script>alert('hello'); confirm('sure?')</script><p>Text</p>", encoding="utf-8")
+            p = ruler(str(page), "--viewport", "1280x900")
+        self.assertEqual((p.returncode, p.stderr), (0, ""))
+
+    def test_stopping_a_run_leaves_no_profile_and_no_traceback(self) -> None:
+        for sig, code, said in ((signal.SIGINT, 130, "layout-ruler: interrupted\n"), (signal.SIGTERM, 143, "")):
+            with self.subTest(signal=sig.name), tempfile.TemporaryDirectory() as tmp:
+                env = dict(os.environ, TMPDIR=tmp)
+                proc = subprocess.Popen([sys.executable, "-m", "layout_ruler", "demo/aligned.html"], cwd=str(ROOT),
+                                        env=env, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                deadline = time.time() + 20
+                while not any(Path(tmp).glob("layout-ruler-*")) and time.time() < deadline:
+                    time.sleep(0.05)
+                time.sleep(1)  # well into the page load
+                proc.send_signal(sig)
+                out, err = proc.communicate(timeout=30)
+                self.assertEqual((proc.returncode, err), (code, said))
+                self.assertEqual(list(Path(tmp).glob("layout-ruler-*")), [])
 
     def test_a_file_url_and_a_path_measure_the_same(self) -> None:
         url = (ROOT / "demo" / "aligned.html").as_uri()
