@@ -194,6 +194,14 @@ def run(args: argparse.Namespace) -> int:
         result = judge(probes, scale, args.screen, asked)
     except ValueError as e:
         raise UsageError(str(e)) from None
+    except Exception as e:
+        # A recorded probe is input: a shape check_probe let through is still
+        # bad input, so it is one line and exit 2. On a rendered page the probe
+        # is ours, and a failure there is a bug whose traceback should show.
+        # SIGTERM and Ctrl-C are not Exceptions and still unwind past this.
+        if not args.probe_json:
+            raise
+        raise UsageError(f"could not judge probe {page}: {type(e).__name__}: {e}") from None
     if args.dump_probe:
         stem = Path(urllib.parse.urlparse(page).path).stem or "page"
         os.makedirs(args.dump_probe, exist_ok=True)

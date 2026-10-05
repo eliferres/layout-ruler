@@ -13,6 +13,6 @@ All notable changes to this project are documented in this file. The format is b
 - The `baselines` rule: text cells on one line of a row share its baseline, with the offset of each cell that does not.
 - The `viewport` rule, and `screen-height` with `--screen`: nothing runs off the screen at any width checked.
 - `data-ruler` attributes to declare a designed exception in the page, each listed in the output as an allow.
-- `--json` output with every row, and `--probe-json` / `--dump-probe` to judge measurements recorded by any driver.
+- `--json` output with every row, and `--probe-json` / `--dump-probe` to judge measurements recorded by any driver. A recorded probe is checked field by field before it is judged, numbers must be finite, and a probe the judge still cannot read is exit 2 in one line.
 - Measurement waits for the page to settle: fonts, stylesheets, finite animations, content added while it is scrolled through, and images that start loading on the way. JavaScript dialogs are dismissed as they open.
 - Exit codes 0 for no findings, 1 for findings and 2 for a page that could not be measured, including one whose stylesheet did not load.

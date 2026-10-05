@@ -128,12 +128,31 @@ class TestErrors(unittest.TestCase):
                                   "sets[0].rows[0].box.x is not a number"),
             "null set": (broken(lambda d: d.update(sets=[None])), "sets[0] is not an object"),
             "string overflow": (broken(lambda d: d.update(overflow=["x"])), "overflow[0] is not an object"),
+            "list off": (broken(lambda d: d.update(off=[1])), "off is not a whole number of 0 or more"),
+            "string border": (broken(lambda d: d["sets"][0]["rows"][0].update(border="1px")),
+                              "sets[0].rows[0].border is not a number"),
+            "string reach": (broken(lambda d: d.update(reach="x")), "reach is not an object"),
+            "string reach edge": (broken(lambda d: d.update(reach={"right": "x"})), "reach.right is not a number"),
+            "NaN coordinate": (broken(lambda d: d["sets"][0]["rows"][1]["cells"][0]["box"].update(y=float("nan"))),
+                               "sets[0].rows[1].cells[0].box.y is not finite"),
+            "infinite scroll width": (broken(lambda d: d.update(scrollWidth=float("inf"))), "scrollWidth is not finite"),
         }
         for name, (probe, why) in cases.items():
             with self.subTest(case=name), tempfile.TemporaryDirectory() as tmp:
                 path = Path(tmp) / "probe.json"
                 path.write_text(json.dumps(probe))
                 self.assert_error(ruler("--probe-json", str(path)), f"layout-ruler: malformed probe {path}: {why}")
+
+    def test_a_probe_the_judge_cannot_read_is_one_line_not_a_traceback(self) -> None:
+        """A field check can miss a shape the judge trips on; that is still
+        bad input, reported as exit 2 in one line."""
+        err = io.StringIO()
+        with mock.patch.object(cli, "judge_viewport", side_effect=RuntimeError("boom")), \
+                contextlib.redirect_stderr(err), contextlib.redirect_stdout(io.StringIO()):
+            code = cli.main(["--probe-json", f"{ROOT / FIX}/aligned-list.json"])
+        self.assertEqual(code, 2)
+        self.assertEqual(err.getvalue(), f"layout-ruler: could not judge probe {ROOT / FIX}/aligned-list.json: "
+                                         "RuntimeError: boom\n")
 
     def test_a_chrome_path_that_does_not_exist(self) -> None:
         self.assert_error(ruler(f"{FIX}/aligned-list.html", "--chrome", "/nonexistent/chrome"),

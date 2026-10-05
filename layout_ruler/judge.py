@@ -28,6 +28,7 @@ Every rule allows TOL px. A FAIL row carries the measured numbers.
 """
 from __future__ import annotations
 
+import math
 from collections import Counter
 from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 
@@ -382,6 +383,8 @@ def check_probe(d: Any) -> None:
             return
         if isinstance(v, bool) or not isinstance(v, (int, float)):
             raise ValueError(f"{where} is not a number")
+        if not math.isfinite(v):  # JSON from a script can carry NaN, and NaN compares false with every edge
+            raise ValueError(f"{where} is not finite")
 
     def obj(v: Any, where: str) -> Dict[str, Any]:
         if not isinstance(v, dict):
@@ -422,6 +425,7 @@ def check_probe(d: Any) -> None:
         for j, r in enumerate(items(field(st, "rows", sw + "."), sw + ".rows", nonempty=True)):
             rw = f"{sw}.rows[{j}]"
             box(obj(r, rw), rw)
+            number(r.get("border"), f"{rw}.border", optional=True)
             for k, c in enumerate(items(field(r, "cells", rw + "."), rw + ".cells", nonempty=True)):
                 cw = f"{rw}.cells[{k}]"
                 text(obj(c, cw), "sig", cw)
@@ -434,6 +438,13 @@ def check_probe(d: Any) -> None:
     for i, o in enumerate(items(d.get("overflow") or [], "overflow")):
         text(obj(o, f"overflow[{i}]"), "path", f"overflow[{i}]")
         box(o, f"overflow[{i}]")
+    off = d.get("off")
+    if off is not None and (isinstance(off, bool) or not isinstance(off, int) or off < 0):
+        raise ValueError("off is not a whole number of 0 or more")
+    if d.get("reach") is not None:
+        reach = obj(d["reach"], "reach")
+        for k in ("right", "bottom"):
+            number(reach.get(k), f"reach.{k}", optional=True)
 
 
 def judge_viewport(d: Dict[str, Any], scale: Scale, screen: bool = False) -> Tuple[List[Row], List[Allow], int, int]:
