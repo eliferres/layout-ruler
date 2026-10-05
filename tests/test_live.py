@@ -92,6 +92,16 @@ class TestLive(unittest.TestCase):
                 self.assertEqual((proc.returncode, err), (code, said))
                 self.assertEqual(list(Path(tmp).glob("layout-ruler-*")), [])
 
+    def test_overflow_is_read_on_the_side_the_page_scrolls_to(self) -> None:
+        """A box parked off the start edge (a skip link at left: -9999px)
+        never scrolls the page sideways, so it is no finding. The recorded
+        fixtures only replay what the probe once saw; this renders the page."""
+        p = ruler("tests/fixtures/skip-link-off-left.html", "--json", "--viewport", "1280x900")
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        page = [r for r in json.loads(p.stdout)["viewports"][0]["rows"] if r["rule"] == "viewport"]
+        self.assertEqual([(r["measurement"], r["verdict"]) for r in page],
+                         [("scrollWidth 1280 vs 1280; 0 box(es) outside", "PASS")])
+
     def test_a_file_url_and_a_path_measure_the_same(self) -> None:
         url = (ROOT / "demo" / "aligned.html").as_uri()
         a = json.loads(ruler(url, "--json", "--viewport", "1280x900").stdout)
