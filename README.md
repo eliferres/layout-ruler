@@ -1,6 +1,6 @@
 # layout-ruler
 
-layout-ruler renders a web page in headless Chrome, reads the box of every element, and checks the geometry an eye skims past: columns whose edges should line up, gaps that should be equal and on a spacing scale, siblings that should be the same size, text that should share a baseline, and anything that runs off a phone screen. Every finding prints the pixels it measured.
+layout-ruler renders a web page in headless Chrome, measures every element's box, and reports misaligned columns, uneven gaps, mismatched sizes and overflow. Every finding prints the pixels it measured.
 
 ![ci](https://github.com/eliferres/layout-ruler/actions/workflows/ci.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -8,6 +8,10 @@ layout-ruler renders a web page in headless Chrome, reads the box of every eleme
 ![dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
 
 <img src="demo/terminal.svg" width="660" alt="Terminal session running layout-ruler on six demo pages at 1280 and 375 pixels wide. The aligned list passes. Each other page fails on its one planted fault with the measured pixels printed: status dots with an 80px left-edge spread, a 14px gap among 8px gaps, a 56px row among 48px rows, a cell whose baseline sits 4px low, and a 400px banner that runs off a 375px screen.">
+
+## What it does
+
+layout-ruler renders a web page in headless Chrome, reads the box of every element, and checks the geometry an eye skims past: columns whose edges should line up, gaps that should be equal and on a spacing scale, siblings that should be the same size, text that should share a baseline, and anything that runs off a phone screen.
 
 ## Install
 
