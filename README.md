@@ -2,12 +2,14 @@
 
 layout-ruler renders a web page in headless Chrome, measures every element's box, and reports misaligned columns, uneven gaps, mismatched sizes and overflow. Every finding prints the pixels it measured.
 
-![ci](https://github.com/eliferres/layout-ruler/actions/workflows/ci.yml/badge.svg)
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
-![dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
+[![ci](https://github.com/eliferres/layout-ruler/actions/workflows/ci.yml/badge.svg)](https://github.com/eliferres/layout-ruler/actions/workflows/ci.yml)
+![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)
+![dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
 
 <img src="demo/terminal.svg" width="660" alt="Terminal session running layout-ruler on six demo pages at 1280 and 375 pixels wide. The aligned list passes. Each other page fails on its one planted fault with the measured pixels printed: status dots with an 80px left-edge spread, a 14px gap among 8px gaps, a 56px row among 48px rows, a cell whose baseline sits 4px low, and a 400px banner that runs off a 375px screen.">
+
+The [fde-agent-skills](https://github.com/eliferres/fde-agent-skills) library documents the working methods behind this tool and its sibling tools as agent skills.
 
 ## What it does
 
